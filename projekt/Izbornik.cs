@@ -32,7 +32,12 @@ namespace projekt
 
         }
 
-        private void buttonTreseta_Click(object sender, EventArgs e)
+        private void otvoriTreseta(object sender, EventArgs e)
+        {
+
+        }
+
+        private void otvoriKrizicKruzic(object sender, EventArgs e)
         {
 
         }

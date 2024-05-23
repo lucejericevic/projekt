@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Izbornik));
             this.label_dobroDosli = new System.Windows.Forms.Label();
             this.labelizaberiteIgricu = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -60,45 +59,49 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(376, 273);
+            this.button1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button1.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button1.Location = new System.Drawing.Point(274, 276);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(352, 78);
             this.button1.TabIndex = 5;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Text = "Igrica 3";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.button2.BackColor = System.Drawing.Color.LightSteelBlue;
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.button2.Location = new System.Drawing.Point(376, 189);
+            this.button2.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button2.Location = new System.Drawing.Point(274, 192);
             this.button2.Name = "button2";
             this.button2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.button2.Size = new System.Drawing.Size(352, 78);
             this.button2.TabIndex = 4;
             this.button2.Text = "Križić Kružić";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.otvoriKrizicKruzic);
             // 
             // buttonTreseta
             // 
             this.buttonTreseta.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.buttonTreseta.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonTreseta.BackgroundImage")));
-            this.buttonTreseta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.buttonTreseta.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTreseta.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.buttonTreseta.Location = new System.Drawing.Point(376, 105);
+            this.buttonTreseta.Location = new System.Drawing.Point(274, 108);
             this.buttonTreseta.Name = "buttonTreseta";
             this.buttonTreseta.Size = new System.Drawing.Size(352, 78);
             this.buttonTreseta.TabIndex = 2;
             this.buttonTreseta.Text = "Trešeta";
             this.buttonTreseta.UseVisualStyleBackColor = false;
-            this.buttonTreseta.Click += new System.EventHandler(this.buttonTreseta_Click);
+            this.buttonTreseta.Click += new System.EventHandler(this.otvoriTreseta);
             // 
             // Izbornik
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.AliceBlue;
+            this.ClientSize = new System.Drawing.Size(686, 439);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.buttonTreseta);

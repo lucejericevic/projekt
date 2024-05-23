@@ -36,5 +36,9 @@ namespace projekt
 
         }
 
+        private void KrizicKruzic_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
