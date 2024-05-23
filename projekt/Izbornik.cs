@@ -34,12 +34,14 @@ namespace projekt
 
         private void otvoriTreseta(object sender, EventArgs e)
         {
-
+            Treseta formTreseta = new Treseta();
+            formTreseta.ShowDialog();
         }
 
         private void otvoriKrizicKruzic(object sender, EventArgs e)
         {
-
+            KrizicKruzic formKrizicKruzic = new KrizicKruzic();
+            formKrizicKruzic.ShowDialog();
         }
     }
 }
