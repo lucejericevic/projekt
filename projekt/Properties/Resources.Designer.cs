@@ -93,6 +93,16 @@ namespace projekt.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap mreža_krizic_kruzic_probni {
+            get {
+                object obj = ResourceManager.GetObject("mreža_krizic_kruzic_probni", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap preuzmi {
             get {
                 object obj = ResourceManager.GetObject("preuzmi", resourceCulture);

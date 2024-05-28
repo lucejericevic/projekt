@@ -114,5 +114,8 @@
   <ItemGroup>
     <None Include="Resources\krizickruzic_slika2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mreža_krizic_kruzic_probni.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
