@@ -117,5 +117,20 @@
   <ItemGroup>
     <None Include="Resources\mreža_krizic_kruzic_probni.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dijagonala 1_files\658543-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noun-diagonal-line-658544.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noun-diagonal-line-658554.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dijagonala 1_files\658554-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\result.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -41,24 +41,29 @@
             this.buttonResetiraj = new System.Windows.Forms.Button();
             this.labelKrizicKruzic = new System.Windows.Forms.Label();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripDropDownButton1 = new System.Windows.Forms.ToolStripDropDownButton();
-            this.igrajSPrijateljemToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.igrajSBotomToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.laganoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.teškoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.buttonX = new System.Windows.Forms.Button();
             this.buttonO = new System.Windows.Forms.Button();
             this.labelIgrac = new System.Windows.Forms.Label();
             this.panelVodoravni = new System.Windows.Forms.Panel();
             this.panelUspravni = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBoxDijagonala2 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxDijagonala1 = new System.Windows.Forms.PictureBox();
+            this.toolStripDropDownButton1 = new System.Windows.Forms.ToolStripDropDownButton();
+            this.igrajSPrijateljemToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.igrajSBotomToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.laganoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.teškoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDijagonala2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDijagonala1)).BeginInit();
             this.SuspendLayout();
             // 
             // polje1
             // 
             this.polje1.BackColor = System.Drawing.Color.AliceBlue;
+            this.polje1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lavender;
             this.polje1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.polje1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.polje1.Location = new System.Drawing.Point(96, 192);
@@ -72,6 +77,7 @@
             // polje2
             // 
             this.polje2.BackColor = System.Drawing.Color.AliceBlue;
+            this.polje2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lavender;
             this.polje2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.polje2.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.polje2.Location = new System.Drawing.Point(237, 192);
@@ -85,6 +91,7 @@
             // polje3
             // 
             this.polje3.BackColor = System.Drawing.Color.AliceBlue;
+            this.polje3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lavender;
             this.polje3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.polje3.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.polje3.Location = new System.Drawing.Point(379, 192);
@@ -98,6 +105,7 @@
             // polje4
             // 
             this.polje4.BackColor = System.Drawing.Color.AliceBlue;
+            this.polje4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lavender;
             this.polje4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.polje4.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.polje4.Location = new System.Drawing.Point(96, 323);
@@ -111,6 +119,7 @@
             // polje5
             // 
             this.polje5.BackColor = System.Drawing.Color.AliceBlue;
+            this.polje5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lavender;
             this.polje5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.polje5.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.polje5.Location = new System.Drawing.Point(237, 323);
@@ -124,6 +133,7 @@
             // polje6
             // 
             this.polje6.BackColor = System.Drawing.Color.AliceBlue;
+            this.polje6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lavender;
             this.polje6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.polje6.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.polje6.Location = new System.Drawing.Point(379, 323);
@@ -137,6 +147,7 @@
             // polje7
             // 
             this.polje7.BackColor = System.Drawing.Color.AliceBlue;
+            this.polje7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lavender;
             this.polje7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.polje7.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.polje7.Location = new System.Drawing.Point(96, 453);
@@ -150,6 +161,7 @@
             // polje8
             // 
             this.polje8.BackColor = System.Drawing.Color.AliceBlue;
+            this.polje8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lavender;
             this.polje8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.polje8.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.polje8.Location = new System.Drawing.Point(237, 453);
@@ -163,6 +175,7 @@
             // polje9
             // 
             this.polje9.BackColor = System.Drawing.Color.AliceBlue;
+            this.polje9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lavender;
             this.polje9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.polje9.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.polje9.Location = new System.Drawing.Point(379, 453);
@@ -178,6 +191,7 @@
             this.buttonResetiraj.BackColor = System.Drawing.Color.LightSteelBlue;
             this.buttonResetiraj.FlatAppearance.BorderColor = System.Drawing.Color.AliceBlue;
             this.buttonResetiraj.FlatAppearance.BorderSize = 2;
+            this.buttonResetiraj.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lavender;
             this.buttonResetiraj.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonResetiraj.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.buttonResetiraj.ForeColor = System.Drawing.Color.Black;
@@ -214,6 +228,114 @@
             this.toolStrip1.Size = new System.Drawing.Size(617, 27);
             this.toolStrip1.TabIndex = 3;
             this.toolStrip1.Text = "Izbornik";
+            // 
+            // buttonX
+            // 
+            this.buttonX.BackColor = System.Drawing.Color.AliceBlue;
+            this.buttonX.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.buttonX.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonX.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lavender;
+            this.buttonX.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonX.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.buttonX.Location = new System.Drawing.Point(13, 104);
+            this.buttonX.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonX.Name = "buttonX";
+            this.buttonX.Size = new System.Drawing.Size(240, 48);
+            this.buttonX.TabIndex = 15;
+            this.buttonX.Text = "🗙                    -";
+            this.buttonX.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonX.UseVisualStyleBackColor = false;
+            this.buttonX.Click += new System.EventHandler(this.buttonX_Click);
+            // 
+            // buttonO
+            // 
+            this.buttonO.BackColor = System.Drawing.Color.AliceBlue;
+            this.buttonO.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.buttonO.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonO.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lavender;
+            this.buttonO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonO.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.buttonO.Location = new System.Drawing.Point(364, 104);
+            this.buttonO.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonO.Name = "buttonO";
+            this.buttonO.Size = new System.Drawing.Size(240, 48);
+            this.buttonO.TabIndex = 15;
+            this.buttonO.Text = "〇                    -";
+            this.buttonO.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonO.UseVisualStyleBackColor = false;
+            this.buttonO.Click += new System.EventHandler(this.buttonO_Click);
+            // 
+            // labelIgrac
+            // 
+            this.labelIgrac.AutoSize = true;
+            this.labelIgrac.Location = new System.Drawing.Point(280, 159);
+            this.labelIgrac.Name = "labelIgrac";
+            this.labelIgrac.Size = new System.Drawing.Size(47, 16);
+            this.labelIgrac.TabIndex = 16;
+            this.labelIgrac.Text = "Igrajte!";
+            this.labelIgrac.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panelVodoravni
+            // 
+            this.panelVodoravni.BackColor = System.Drawing.Color.Black;
+            this.panelVodoravni.Location = new System.Drawing.Point(85, 506);
+            this.panelVodoravni.Name = "panelVodoravni";
+            this.panelVodoravni.Size = new System.Drawing.Size(437, 14);
+            this.panelVodoravni.TabIndex = 17;
+            this.panelVodoravni.Visible = false;
+            // 
+            // panelUspravni
+            // 
+            this.panelUspravni.BackColor = System.Drawing.Color.Black;
+            this.panelUspravni.Location = new System.Drawing.Point(436, 179);
+            this.panelUspravni.Name = "panelUspravni";
+            this.panelUspravni.Size = new System.Drawing.Size(15, 408);
+            this.panelUspravni.TabIndex = 18;
+            this.panelUspravni.Visible = false;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.SlateBlue;
+            this.panel1.Location = new System.Drawing.Point(13, 149);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(240, 3);
+            this.panel1.TabIndex = 13;
+            this.panel1.Visible = false;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.SlateBlue;
+            this.panel2.Location = new System.Drawing.Point(364, 149);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(240, 3);
+            this.panel2.TabIndex = 13;
+            this.panel2.Visible = false;
+            // 
+            // pictureBoxDijagonala2
+            // 
+            this.pictureBoxDijagonala2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxDijagonala2.BackgroundImage = global::projekt.Properties.Resources.result;
+            this.pictureBoxDijagonala2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxDijagonala2.Location = new System.Drawing.Point(329, 192);
+            this.pictureBoxDijagonala2.Name = "pictureBoxDijagonala2";
+            this.pictureBoxDijagonala2.Size = new System.Drawing.Size(416, 384);
+            this.pictureBoxDijagonala2.TabIndex = 19;
+            this.pictureBoxDijagonala2.TabStop = false;
+            this.pictureBoxDijagonala2.Visible = false;
+            // 
+            // pictureBoxDijagonala1
+            // 
+            this.pictureBoxDijagonala1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxDijagonala1.BackgroundImage = global::projekt.Properties.Resources._658543_200;
+            this.pictureBoxDijagonala1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxDijagonala1.Location = new System.Drawing.Point(475, 192);
+            this.pictureBoxDijagonala1.Name = "pictureBoxDijagonala1";
+            this.pictureBoxDijagonala1.Size = new System.Drawing.Size(416, 384);
+            this.pictureBoxDijagonala1.TabIndex = 13;
+            this.pictureBoxDijagonala1.TabStop = false;
+            this.pictureBoxDijagonala1.Visible = false;
             // 
             // toolStripDropDownButton1
             // 
@@ -258,80 +380,16 @@
             this.teškoToolStripMenuItem.Text = "Teško";
             this.teškoToolStripMenuItem.Click += new System.EventHandler(this.teškoToolStripMenuItem_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(97, 192);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(416, 384);
-            this.pictureBox1.TabIndex = 13;
-            this.pictureBox1.TabStop = false;
-            // 
-            // buttonX
-            // 
-            this.buttonX.BackColor = System.Drawing.Color.AliceBlue;
-            this.buttonX.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.buttonX.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonX.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.buttonX.Location = new System.Drawing.Point(13, 104);
-            this.buttonX.Margin = new System.Windows.Forms.Padding(4);
-            this.buttonX.Name = "buttonX";
-            this.buttonX.Size = new System.Drawing.Size(240, 48);
-            this.buttonX.TabIndex = 10;
-            this.buttonX.Text = "🗙                    -";
-            this.buttonX.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonX.UseVisualStyleBackColor = false;
-            this.buttonX.Click += new System.EventHandler(this.buttonX_Click);
-            // 
-            // buttonO
-            // 
-            this.buttonO.BackColor = System.Drawing.Color.AliceBlue;
-            this.buttonO.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.buttonO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonO.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.buttonO.Location = new System.Drawing.Point(364, 104);
-            this.buttonO.Margin = new System.Windows.Forms.Padding(4);
-            this.buttonO.Name = "buttonO";
-            this.buttonO.Size = new System.Drawing.Size(240, 48);
-            this.buttonO.TabIndex = 15;
-            this.buttonO.Text = "〇                    -";
-            this.buttonO.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonO.UseVisualStyleBackColor = false;
-            this.buttonO.Click += new System.EventHandler(this.buttonO_Click);
-            // 
-            // labelIgrac
-            // 
-            this.labelIgrac.AutoSize = true;
-            this.labelIgrac.Location = new System.Drawing.Point(280, 159);
-            this.labelIgrac.Name = "labelIgrac";
-            this.labelIgrac.Size = new System.Drawing.Size(47, 16);
-            this.labelIgrac.TabIndex = 16;
-            this.labelIgrac.Text = "Igrajte!";
-            this.labelIgrac.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panelVodoravni
-            // 
-            this.panelVodoravni.BackColor = System.Drawing.Color.Black;
-            this.panelVodoravni.Location = new System.Drawing.Point(85, 506);
-            this.panelVodoravni.Name = "panelVodoravni";
-            this.panelVodoravni.Size = new System.Drawing.Size(437, 14);
-            this.panelVodoravni.TabIndex = 17;
-            this.panelVodoravni.Visible = false;
-            // 
-            // panelUspravni
-            // 
-            this.panelUspravni.BackColor = System.Drawing.Color.Black;
-            this.panelUspravni.Location = new System.Drawing.Point(436, 179);
-            this.panelUspravni.Name = "panelUspravni";
-            this.panelUspravni.Size = new System.Drawing.Size(15, 408);
-            this.panelUspravni.TabIndex = 18;
-            this.panelUspravni.Visible = false;
-            // 
             // KrizicKruzic
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
             this.ClientSize = new System.Drawing.Size(617, 665);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pictureBoxDijagonala2);
+            this.Controls.Add(this.pictureBoxDijagonala1);
             this.Controls.Add(this.panelUspravni);
             this.Controls.Add(this.panelVodoravni);
             this.Controls.Add(this.labelIgrac);
@@ -349,14 +407,14 @@
             this.Controls.Add(this.polje3);
             this.Controls.Add(this.polje2);
             this.Controls.Add(this.polje1);
-            this.Controls.Add(this.pictureBox1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "KrizicKruzic";
             this.Text = "Križić Kružić";
             this.Load += new System.EventHandler(this.KrizicKruzic_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDijagonala2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDijagonala1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -374,7 +432,7 @@
         private System.Windows.Forms.Button polje9;
         private System.Windows.Forms.Button buttonResetiraj;
         private System.Windows.Forms.Label labelKrizicKruzic;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBoxDijagonala1;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.Button buttonX;
         private System.Windows.Forms.Button buttonO;
@@ -386,5 +444,8 @@
         private System.Windows.Forms.Label labelIgrac;
         private System.Windows.Forms.Panel panelVodoravni;
         private System.Windows.Forms.Panel panelUspravni;
+        private System.Windows.Forms.PictureBox pictureBoxDijagonala2;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
     }
 }

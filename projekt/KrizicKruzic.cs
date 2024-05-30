@@ -12,16 +12,28 @@ namespace projekt
 {
     public partial class KrizicKruzic : Form
     {
+
+        /**
+            Pozicija 
+             0|1|2
+             3|4|5
+             6|7|8
+        */
         int[] iData = new int[9];
 
+        //-1 = X, 1 = O, 0 = Zaustavi
         int iTurn = -1;
 
-        //1=igraj s prijateljem, 2=igraj s botom (lagano), 3= igraj s botom (te
+        //1=igraj s prijateljem, 2=igraj s botom (lagano), 3= igraj s botom (teško)
+        //namješteno da automatski igraš s prijateljem
         int iType = 1;
 
         bool bEnableBot = false;
 
+        //Sprema poziciju zadnjeg poteza
         int iLastMove = -1;
+
+        //Sprema rezultate od X i 
         int rezultatX = 0;
         int rezultatO = 0;
 
@@ -34,7 +46,6 @@ namespace projekt
 
 
         //ovo je za resetirat igricu
-
         void Resetiraj()
         {
             for (int i = 0; i < 9; i++)
@@ -45,6 +56,7 @@ namespace projekt
             iLastMove = -1;
             bEnableBot = false;
             //X prvi igra
+            //želim namistit da se minja da svaki put drugi igra prvi
             iTurn = 1;
             SetNextTurn();
 
@@ -61,8 +73,19 @@ namespace projekt
             //da se ne vide povučenje crte pobjednika kad se resetira igra
             panelUspravni.Visible = false;
             panelVodoravni.Visible = false;
+            pictureBoxDijagonala1.Visible = false;
+            pictureBoxDijagonala2.Visible = false;
         }
 
+        private void KrizicKruzic_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripSplitButton1_ButtonClick(object sender, EventArgs e)
+        {
+
+        }
         private void igrajSPrijateljemToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             toolStripDropDownButton1.Text = "Igraj s prijateljem";
@@ -94,15 +117,7 @@ namespace projekt
             Resetiraj();
         }
 
-        private void KrizicKruzic_Load(object sender, EventArgs e)
-        {
 
-        }
-
-        private void toolStripSplitButton1_ButtonClick(object sender, EventArgs e)
-        {
-
-        }
 
         private void polje1_Click(object sender, EventArgs e)
         {
@@ -232,11 +247,12 @@ namespace projekt
 
         private void buttonX_Click(object sender, EventArgs e)
         {
-
+            buttonX.Text = "🗙                    -";
         }
 
         private void buttonO_Click(object sender, EventArgs e)
         {
+            buttonO.Text = "𐩒                    -";
             if (iType == 1 || iLastMove != -1)
                 return;
 
@@ -290,16 +306,19 @@ namespace projekt
             // \
             else if (iData[0] != 0 && iData[0] == iData[4] && iData[4] == iData[8])
             {
+                
                 return iData[0];
             }
             // /
             else if (iData[2] != 0 && iData[2] == iData[4] && iData[4] == iData[6])
             {
+                
                 return iData[2];
             }
 
             else if (iData[0] != 0 && iData[1] != 0 && iData[2] != 0 && iData[3] != 0 && iData[4] != 0 && iData[5] != 0 && iData[6] != 0 && iData[7] != 0 && iData[8] != 0)
             {
+                
                 return 0;
             }
 
@@ -309,6 +328,7 @@ namespace projekt
 
         void RunBot()
         {
+            //1= igraj protiv prijatelja 0=Game over
             if (iType == 1 || iTurn == 0)
                 return;
 
@@ -375,8 +395,8 @@ namespace projekt
                 {
                     iTurn = 1;
                     labelIgrac.Text = "𐩒 je na redu.";
-                    //panel2.Visible=false;
-                    //panel3.Visible=true;
+                    panel1.Visible=false;
+                    panel2.Visible=true;
 
                 }
                 else
@@ -385,15 +405,15 @@ namespace projekt
                     {
                         iTurn = -1;
                         labelIgrac.Text = "Igrajte!";
-                        //panel2.Visible = true;
-                        //panel3.Visible = false;
+                        panel1.Visible = true;
+                        panel2.Visible = false;
                     }
                     else
                     {
                         iTurn = -1;
                         labelIgrac.Text = "🗙 je na redu.";
-                        //panel2.Visible = true;
-                        //panel3.Visible = false;
+                        panel1.Visible = true;
+                        panel2.Visible = false;
                     }
                 }
             }
@@ -443,6 +463,7 @@ namespace projekt
             return -1;
         }
 
+        
         void Nepobjediv(int turn)
         {
             if (iData[0] == 0 && ((iData[1] == turn && iData[2] == turn) || (iData[3] == turn && iData[6] == turn) || (iData[4] == turn && iData[8] == turn)))
@@ -512,6 +533,7 @@ namespace projekt
                 }
             }
         }
+
     }
     }
 
