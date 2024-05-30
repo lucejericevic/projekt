@@ -58,7 +58,7 @@ namespace projekt
             //X prvi igra
             //želim namistit da se minja da svaki put drugi igra prvi
             iTurn = 1;
-            SetNextTurn();
+            SljedeciPotez();
 
             polje1.Text = null;
             polje2.Text = null;
@@ -128,7 +128,7 @@ namespace projekt
                 iLastMove = 0;
                 iData[0] = iTurn;
                 ProminiSliku(iLastMove);
-                SetNextTurn();
+                SljedeciPotez();
                 RunBot();
             }
         }
@@ -142,7 +142,7 @@ namespace projekt
                 iLastMove = 1;
                 iData[1] = iTurn;
                 ProminiSliku(iLastMove);
-                SetNextTurn();
+                SljedeciPotez();
                 RunBot();
             }
         }
@@ -156,7 +156,7 @@ namespace projekt
                 iLastMove = 2;
                 iData[2] = iTurn;
                 ProminiSliku(iLastMove);
-                SetNextTurn();
+                SljedeciPotez();
                 RunBot();
             }
         }
@@ -170,7 +170,7 @@ namespace projekt
                 iLastMove = 3;
                 iData[3] = iTurn;
                 ProminiSliku(iLastMove);
-                SetNextTurn();
+                SljedeciPotez();
                 RunBot();
             }
         }
@@ -184,7 +184,7 @@ namespace projekt
                 iLastMove = 4;
                 iData[4] = iTurn;
                 ProminiSliku(iLastMove);
-                SetNextTurn();
+                SljedeciPotez();
                 RunBot();
             }
         }
@@ -198,7 +198,7 @@ namespace projekt
                 iLastMove = 5;
                 iData[5] = iTurn;
                 ProminiSliku(iLastMove);
-                SetNextTurn();
+                SljedeciPotez();
                 RunBot();
             }
         }
@@ -212,7 +212,7 @@ namespace projekt
                 iLastMove = 6;
                 iData[6] = iTurn;
                 ProminiSliku(iLastMove);
-                SetNextTurn();
+                SljedeciPotez();
                 RunBot();
             }
         }
@@ -226,7 +226,7 @@ namespace projekt
                 iLastMove = 7;
                 iData[7] = iTurn;
                 ProminiSliku(iLastMove);
-                SetNextTurn();
+                SljedeciPotez();
                 RunBot();
             }
         }
@@ -240,7 +240,7 @@ namespace projekt
                 iLastMove = 8;
                 iData[8] = iTurn;
                 ProminiSliku(iLastMove);
-                SetNextTurn();
+                SljedeciPotez();
                 RunBot();
             }
         }
@@ -333,7 +333,7 @@ namespace projekt
                 return;
 
             bEnableBot = true;
-            WaitNSeconds(1);
+            CekajNSekunda(1);
 
             if (iType == 2)
             {
@@ -351,7 +351,7 @@ namespace projekt
             iData[iLastMove] = iTurn;
             ProminiSliku(iLastMove);
             bEnableBot = false;
-            SetNextTurn();
+            SljedeciPotez();
         }
 
         void RunTeski()
@@ -372,12 +372,12 @@ namespace projekt
             iData[iLastMove] = iTurn;
             ProminiSliku(iLastMove);
             bEnableBot = false;
-            SetNextTurn();
+            SljedeciPotez();
         }
 
 
 
-        private void WaitNSeconds(int segundos)
+        private void CekajNSekunda(int segundos)
         {
             if (segundos < 1) return;
             DateTime _desired = DateTime.Now.AddSeconds(segundos);
@@ -386,7 +386,7 @@ namespace projekt
                 System.Windows.Forms.Application.DoEvents();
             }
         }
-        void SetNextTurn()
+        void SljedeciPotez()
         {
             int iGameStatus = Status();
             if (iGameStatus == 2)
@@ -464,25 +464,25 @@ namespace projekt
         }
 
         
-        void Nepobjediv(int turn)
+        void Nepobjediv(int potez)
         {
-            if (iData[0] == 0 && ((iData[1] == turn && iData[2] == turn) || (iData[3] == turn && iData[6] == turn) || (iData[4] == turn && iData[8] == turn)))
+            if (iData[0] == 0 && ((iData[1] == potez && iData[2] == potez) || (iData[3] == potez && iData[6] == potez) || (iData[4] == potez && iData[8] == potez)))
                 iLastMove = 0;
-            else if (iData[1] == 0 && ((iData[0] == turn && iData[2] == turn) || (iData[4] == turn && iData[7] == turn)))
+            else if (iData[1] == 0 && ((iData[0] == potez && iData[2] == potez) || (iData[4] == potez && iData[7] == potez)))
                 iLastMove = 1;
-            else if (iData[2] == 0 && ((iData[0] == turn && iData[1] == turn) || (iData[5] == turn && iData[8] == turn) || (iData[4] == turn && iData[6] == turn)))
+            else if (iData[2] == 0 && ((iData[0] == potez && iData[1] == potez) || (iData[5] == potez && iData[8] == potez) || (iData[4] == potez && iData[6] == potez)))
                 iLastMove = 2;
-            else if (iData[3] == 0 && ((iData[0] == turn && iData[6] == turn) || (iData[4] == turn && iData[5] == turn)))
+            else if (iData[3] == 0 && ((iData[0] == potez && iData[6] == potez) || (iData[4] == potez && iData[5] == potez)))
                 iLastMove = 3;
-            else if (iData[4] == 0 && ((iData[0] == turn && iData[8] == turn) || (iData[2] == turn && iData[6] == turn) || (iData[1] == turn && iData[7] == turn) || (iData[3] == turn && iData[5] == turn)))
+            else if (iData[4] == 0 && ((iData[0] == potez && iData[8] == potez) || (iData[2] == potez && iData[6] == potez) || (iData[1] == potez && iData[7] == potez) || (iData[3] == potez && iData[5] == potez)))
                 iLastMove = 4;
-            else if (iData[5] == 0 && ((iData[2] == turn && iData[8] == turn) || (iData[3] == turn && iData[4] == turn)))
+            else if (iData[5] == 0 && ((iData[2] == potez && iData[8] == potez) || (iData[3] == potez && iData[4] == potez)))
                 iLastMove = 5;
-            else if (iData[6] == 0 && ((iData[0] == turn && iData[3] == turn) || (iData[7] == turn && iData[8] == turn) || (iData[2] == turn && iData[4] == turn)))
+            else if (iData[6] == 0 && ((iData[0] == potez && iData[3] == potez) || (iData[7] == potez && iData[8] == potez) || (iData[2] == potez && iData[4] == potez)))
                 iLastMove = 6;
-            else if (iData[7] == 0 && ((iData[1] == turn && iData[4] == turn) || (iData[6] == turn && iData[8] == turn)))
+            else if (iData[7] == 0 && ((iData[1] == potez && iData[4] == potez) || (iData[6] == potez && iData[8] == potez)))
                 iLastMove = 7;
-            else if (iData[8] == 0 && ((iData[2] == turn && iData[5] == turn) || (iData[6] == turn && iData[7] == turn) || (iData[0] == turn && iData[4] == turn)))
+            else if (iData[8] == 0 && ((iData[2] == potez && iData[5] == potez) || (iData[6] == potez && iData[7] == potez) || (iData[0] == potez && iData[4] == potez)))
                 iLastMove = 8;
         }
         void ProminiSliku(int iPosition)
