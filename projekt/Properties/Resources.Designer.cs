@@ -63,6 +63,36 @@ namespace projekt.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _658543_200 {
+            get {
+                object obj = ResourceManager.GetObject("658543-200", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _658543_2001 {
+            get {
+                object obj = ResourceManager.GetObject("658543-2001", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _658554_200 {
+            get {
+                object obj = ResourceManager.GetObject("658554-200", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap krizickruzic_slika {
             get {
                 object obj = ResourceManager.GetObject("krizickruzic_slika", resourceCulture);
@@ -93,6 +123,36 @@ namespace projekt.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap mreža_krizic_kruzic_probni {
+            get {
+                object obj = ResourceManager.GetObject("mreža_krizic_kruzic_probni", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap noun_diagonal_line_658544 {
+            get {
+                object obj = ResourceManager.GetObject("noun-diagonal-line-658544", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap noun_diagonal_line_658554 {
+            get {
+                object obj = ResourceManager.GetObject("noun-diagonal-line-658554", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap preuzmi {
             get {
                 object obj = ResourceManager.GetObject("preuzmi", resourceCulture);
@@ -106,6 +166,16 @@ namespace projekt.Properties {
         internal static System.Drawing.Bitmap preuzmi1 {
             get {
                 object obj = ResourceManager.GetObject("preuzmi1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap result {
+            get {
+                object obj = ResourceManager.GetObject("result", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
