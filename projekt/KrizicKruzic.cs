@@ -73,8 +73,7 @@ namespace projekt
             //da se ne vide povučenje crte pobjednika kad se resetira igra
             panelUspravni.Visible = false;
             panelVodoravni.Visible = false;
-            pictureBoxDijagonala1.Visible = false;
-            pictureBoxDijagonala2.Visible = false;
+
         }
 
         private void KrizicKruzic_Load(object sender, EventArgs e)

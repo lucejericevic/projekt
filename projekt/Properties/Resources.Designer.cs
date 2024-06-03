@@ -63,9 +63,9 @@ namespace projekt.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _658543_200 {
+        internal static System.Drawing.Bitmap ambulance {
             get {
-                object obj = ResourceManager.GetObject("658543-200", resourceCulture);
+                object obj = ResourceManager.GetObject("ambulance", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace projekt.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _658543_2001 {
+        internal static System.Drawing.Bitmap bronze {
             get {
-                object obj = ResourceManager.GetObject("658543-2001", resourceCulture);
+                object obj = ResourceManager.GetObject("bronze", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace projekt.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _658554_200 {
+        internal static System.Drawing.Bitmap carGreen {
             get {
-                object obj = ResourceManager.GetObject("658554-200", resourceCulture);
+                object obj = ResourceManager.GetObject("carGreen", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +93,9 @@ namespace projekt.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap krizickruzic_slika {
+        internal static System.Drawing.Bitmap carGreen1 {
             get {
-                object obj = ResourceManager.GetObject("krizickruzic_slika", resourceCulture);
+                object obj = ResourceManager.GetObject("carGreen1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +103,9 @@ namespace projekt.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap krizickruzic_slika1 {
+        internal static System.Drawing.Bitmap carGrey {
             get {
-                object obj = ResourceManager.GetObject("krizickruzic_slika1", resourceCulture);
+                object obj = ResourceManager.GetObject("carGrey", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +113,9 @@ namespace projekt.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap krizickruzic_slika2 {
+        internal static System.Drawing.Bitmap carOrange {
             get {
-                object obj = ResourceManager.GetObject("krizickruzic_slika2", resourceCulture);
+                object obj = ResourceManager.GetObject("carOrange", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,9 +123,9 @@ namespace projekt.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap mreža_krizic_kruzic_probni {
+        internal static System.Drawing.Bitmap carPink {
             get {
-                object obj = ResourceManager.GetObject("mreža_krizic_kruzic_probni", resourceCulture);
+                object obj = ResourceManager.GetObject("carPink", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,9 +133,9 @@ namespace projekt.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap noun_diagonal_line_658544 {
+        internal static System.Drawing.Bitmap CarRed {
             get {
-                object obj = ResourceManager.GetObject("noun-diagonal-line-658544", resourceCulture);
+                object obj = ResourceManager.GetObject("CarRed", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -143,9 +143,9 @@ namespace projekt.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap noun_diagonal_line_658554 {
+        internal static System.Drawing.Bitmap carYellow {
             get {
-                object obj = ResourceManager.GetObject("noun-diagonal-line-658554", resourceCulture);
+                object obj = ResourceManager.GetObject("carYellow", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -153,9 +153,9 @@ namespace projekt.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap preuzmi {
+        internal static System.Drawing.Bitmap explosion {
             get {
-                object obj = ResourceManager.GetObject("preuzmi", resourceCulture);
+                object obj = ResourceManager.GetObject("explosion", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -163,9 +163,28 @@ namespace projekt.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap preuzmi1 {
+        internal static System.Drawing.Bitmap gold {
             get {
-                object obj = ResourceManager.GetObject("preuzmi1", resourceCulture);
+                object obj = ResourceManager.GetObject("gold", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream hit {
+            get {
+                return ResourceManager.GetStream("hit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap roadTrack {
+            get {
+                object obj = ResourceManager.GetObject("roadTrack", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -173,9 +192,49 @@ namespace projekt.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap result {
+        internal static System.Drawing.Bitmap roadTrack1 {
             get {
-                object obj = ResourceManager.GetObject("result", resourceCulture);
+                object obj = ResourceManager.GetObject("roadTrack1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap roadTrack2 {
+            get {
+                object obj = ResourceManager.GetObject("roadTrack2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap silver {
+            get {
+                object obj = ResourceManager.GetObject("silver", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TruckBlue {
+            get {
+                object obj = ResourceManager.GetObject("TruckBlue", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TruckWhite {
+            get {
+                object obj = ResourceManager.GetObject("TruckWhite", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

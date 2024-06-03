@@ -67,6 +67,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UtrkaAuta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UtrkaAuta.designer.cs">
+      <DependentUpon>UtrkaAuta.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Izbornik.resx">
       <DependentUpon>Izbornik.cs</DependentUpon>
     </EmbeddedResource>
@@ -86,6 +92,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UtrkaAuta.resx">
+      <DependentUpon>UtrkaAuta.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -99,38 +108,60 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <None Include="Resources\preuzmi.png" />
+    <None Include="Resources\ambulance.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\preuzmi1.png" />
+    <None Include="Resources\bronze.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\krizickruzic_slika.png" />
+    <None Include="Resources\carGreen.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\krizickruzic_slika1.png" />
+    <None Include="Resources\carGreen1.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\krizickruzic_slika2.png" />
+    <None Include="Resources\carGrey.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\mreža_krizic_kruzic_probni.png" />
+    <None Include="Resources\carOrange.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\dijagonala 1_files\658543-200.png" />
+    <None Include="Resources\carPink.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\noun-diagonal-line-658544.png" />
+    <None Include="Resources\CarRed.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\noun-diagonal-line-658554.png" />
+    <None Include="Resources\carYellow.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\dijagonala 1_files\658554-200.png" />
+    <None Include="Resources\explosion.gif" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\result.png" />
+    <None Include="Resources\gold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hit.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\roadTrack.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\roadTrack1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\roadTrack2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\silver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TruckBlue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TruckWhite.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

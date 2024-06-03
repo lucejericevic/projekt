@@ -43,5 +43,11 @@ namespace projekt
             KrizicKruzic formKrizicKruzic = new KrizicKruzic();
             formKrizicKruzic.ShowDialog();
         }
+
+        private void otvoriUtrkuAuta(object sender, EventArgs e)
+        {
+            UtrkaAuta formUtrkaAuta = new UtrkaAuta();
+            formUtrkaAuta.ShowDialog();
+        }
     }
 }

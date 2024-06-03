@@ -65,12 +65,13 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button1.Location = new System.Drawing.Point(365, 340);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(469, 96);
             this.button1.TabIndex = 5;
-            this.button1.Text = "Igrica 3";
+            this.button1.Text = "Auti";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.otvoriUtrkuAuta);
             // 
             // button2
             // 
@@ -80,7 +81,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button2.Location = new System.Drawing.Point(365, 236);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.button2.Size = new System.Drawing.Size(469, 96);
@@ -96,7 +97,7 @@
             this.buttonTreseta.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTreseta.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonTreseta.Location = new System.Drawing.Point(365, 133);
-            this.buttonTreseta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonTreseta.Margin = new System.Windows.Forms.Padding(4);
             this.buttonTreseta.Name = "buttonTreseta";
             this.buttonTreseta.Size = new System.Drawing.Size(469, 96);
             this.buttonTreseta.TabIndex = 2;
@@ -115,7 +116,7 @@
             this.Controls.Add(this.buttonTreseta);
             this.Controls.Add(this.labelizaberiteIgricu);
             this.Controls.Add(this.label_dobroDosli);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Izbornik";
             this.Text = "Izbornik";
             this.Load += new System.EventHandler(this.Form1_Load);

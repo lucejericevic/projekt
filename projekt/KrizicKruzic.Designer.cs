@@ -41,6 +41,11 @@
             this.buttonResetiraj = new System.Windows.Forms.Button();
             this.labelKrizicKruzic = new System.Windows.Forms.Label();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripDropDownButton1 = new System.Windows.Forms.ToolStripDropDownButton();
+            this.igrajSPrijateljemToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.igrajSBotomToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.laganoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.teškoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.buttonX = new System.Windows.Forms.Button();
             this.buttonO = new System.Windows.Forms.Button();
             this.labelIgrac = new System.Windows.Forms.Label();
@@ -48,16 +53,7 @@
             this.panelUspravni = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBoxDijagonala2 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxDijagonala1 = new System.Windows.Forms.PictureBox();
-            this.toolStripDropDownButton1 = new System.Windows.Forms.ToolStripDropDownButton();
-            this.igrajSPrijateljemToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.igrajSBotomToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.laganoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.teškoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDijagonala2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDijagonala1)).BeginInit();
             this.SuspendLayout();
             // 
             // polje1
@@ -229,6 +225,49 @@
             this.toolStrip1.TabIndex = 3;
             this.toolStrip1.Text = "Izbornik";
             // 
+            // toolStripDropDownButton1
+            // 
+            this.toolStripDropDownButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripDropDownButton1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.igrajSPrijateljemToolStripMenuItem1,
+            this.igrajSBotomToolStripMenuItem1});
+            this.toolStripDropDownButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButton1.Image")));
+            this.toolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripDropDownButton1.Name = "toolStripDropDownButton1";
+            this.toolStripDropDownButton1.Size = new System.Drawing.Size(34, 24);
+            this.toolStripDropDownButton1.Text = "toolStripDropDownButton1";
+            // 
+            // igrajSPrijateljemToolStripMenuItem1
+            // 
+            this.igrajSPrijateljemToolStripMenuItem1.Name = "igrajSPrijateljemToolStripMenuItem1";
+            this.igrajSPrijateljemToolStripMenuItem1.Size = new System.Drawing.Size(224, 28);
+            this.igrajSPrijateljemToolStripMenuItem1.Text = "Igraj s prijateljem";
+            this.igrajSPrijateljemToolStripMenuItem1.Click += new System.EventHandler(this.igrajSPrijateljemToolStripMenuItem1_Click);
+            // 
+            // igrajSBotomToolStripMenuItem1
+            // 
+            this.igrajSBotomToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.laganoToolStripMenuItem,
+            this.teškoToolStripMenuItem});
+            this.igrajSBotomToolStripMenuItem1.Name = "igrajSBotomToolStripMenuItem1";
+            this.igrajSBotomToolStripMenuItem1.Size = new System.Drawing.Size(224, 28);
+            this.igrajSBotomToolStripMenuItem1.Text = "Igraj s botom ";
+            this.igrajSBotomToolStripMenuItem1.Click += new System.EventHandler(this.igrajSBotomToolStripMenuItem1_Click);
+            // 
+            // laganoToolStripMenuItem
+            // 
+            this.laganoToolStripMenuItem.Name = "laganoToolStripMenuItem";
+            this.laganoToolStripMenuItem.Size = new System.Drawing.Size(148, 28);
+            this.laganoToolStripMenuItem.Text = "Lagano";
+            this.laganoToolStripMenuItem.Click += new System.EventHandler(this.laganoToolStripMenuItem_Click);
+            // 
+            // teškoToolStripMenuItem
+            // 
+            this.teškoToolStripMenuItem.Name = "teškoToolStripMenuItem";
+            this.teškoToolStripMenuItem.Size = new System.Drawing.Size(148, 28);
+            this.teškoToolStripMenuItem.Text = "Teško";
+            this.teškoToolStripMenuItem.Click += new System.EventHandler(this.teškoToolStripMenuItem_Click);
+            // 
             // buttonX
             // 
             this.buttonX.BackColor = System.Drawing.Color.AliceBlue;
@@ -313,73 +352,6 @@
             this.panel2.TabIndex = 13;
             this.panel2.Visible = false;
             // 
-            // pictureBoxDijagonala2
-            // 
-            this.pictureBoxDijagonala2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxDijagonala2.BackgroundImage = global::projekt.Properties.Resources.result;
-            this.pictureBoxDijagonala2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxDijagonala2.Location = new System.Drawing.Point(329, 192);
-            this.pictureBoxDijagonala2.Name = "pictureBoxDijagonala2";
-            this.pictureBoxDijagonala2.Size = new System.Drawing.Size(416, 384);
-            this.pictureBoxDijagonala2.TabIndex = 19;
-            this.pictureBoxDijagonala2.TabStop = false;
-            this.pictureBoxDijagonala2.Visible = false;
-            // 
-            // pictureBoxDijagonala1
-            // 
-            this.pictureBoxDijagonala1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxDijagonala1.BackgroundImage = global::projekt.Properties.Resources._658543_200;
-            this.pictureBoxDijagonala1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxDijagonala1.Location = new System.Drawing.Point(475, 192);
-            this.pictureBoxDijagonala1.Name = "pictureBoxDijagonala1";
-            this.pictureBoxDijagonala1.Size = new System.Drawing.Size(416, 384);
-            this.pictureBoxDijagonala1.TabIndex = 13;
-            this.pictureBoxDijagonala1.TabStop = false;
-            this.pictureBoxDijagonala1.Visible = false;
-            // 
-            // toolStripDropDownButton1
-            // 
-            this.toolStripDropDownButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripDropDownButton1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.igrajSPrijateljemToolStripMenuItem1,
-            this.igrajSBotomToolStripMenuItem1});
-            this.toolStripDropDownButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButton1.Image")));
-            this.toolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripDropDownButton1.Name = "toolStripDropDownButton1";
-            this.toolStripDropDownButton1.Size = new System.Drawing.Size(34, 24);
-            this.toolStripDropDownButton1.Text = "toolStripDropDownButton1";
-            // 
-            // igrajSPrijateljemToolStripMenuItem1
-            // 
-            this.igrajSPrijateljemToolStripMenuItem1.Name = "igrajSPrijateljemToolStripMenuItem1";
-            this.igrajSPrijateljemToolStripMenuItem1.Size = new System.Drawing.Size(216, 28);
-            this.igrajSPrijateljemToolStripMenuItem1.Text = "Igraj s prijateljem";
-            this.igrajSPrijateljemToolStripMenuItem1.Click += new System.EventHandler(this.igrajSPrijateljemToolStripMenuItem1_Click);
-            // 
-            // igrajSBotomToolStripMenuItem1
-            // 
-            this.igrajSBotomToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.laganoToolStripMenuItem,
-            this.teškoToolStripMenuItem});
-            this.igrajSBotomToolStripMenuItem1.Name = "igrajSBotomToolStripMenuItem1";
-            this.igrajSBotomToolStripMenuItem1.Size = new System.Drawing.Size(216, 28);
-            this.igrajSBotomToolStripMenuItem1.Text = "Igraj s botom ";
-            this.igrajSBotomToolStripMenuItem1.Click += new System.EventHandler(this.igrajSBotomToolStripMenuItem1_Click);
-            // 
-            // laganoToolStripMenuItem
-            // 
-            this.laganoToolStripMenuItem.Name = "laganoToolStripMenuItem";
-            this.laganoToolStripMenuItem.Size = new System.Drawing.Size(148, 28);
-            this.laganoToolStripMenuItem.Text = "Lagano";
-            this.laganoToolStripMenuItem.Click += new System.EventHandler(this.laganoToolStripMenuItem_Click);
-            // 
-            // teškoToolStripMenuItem
-            // 
-            this.teškoToolStripMenuItem.Name = "teškoToolStripMenuItem";
-            this.teškoToolStripMenuItem.Size = new System.Drawing.Size(148, 28);
-            this.teškoToolStripMenuItem.Text = "Teško";
-            this.teškoToolStripMenuItem.Click += new System.EventHandler(this.teškoToolStripMenuItem_Click);
-            // 
             // KrizicKruzic
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -388,8 +360,6 @@
             this.ClientSize = new System.Drawing.Size(617, 665);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.pictureBoxDijagonala2);
-            this.Controls.Add(this.pictureBoxDijagonala1);
             this.Controls.Add(this.panelUspravni);
             this.Controls.Add(this.panelVodoravni);
             this.Controls.Add(this.labelIgrac);
@@ -413,8 +383,6 @@
             this.Load += new System.EventHandler(this.KrizicKruzic_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDijagonala2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDijagonala1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -432,7 +400,6 @@
         private System.Windows.Forms.Button polje9;
         private System.Windows.Forms.Button buttonResetiraj;
         private System.Windows.Forms.Label labelKrizicKruzic;
-        private System.Windows.Forms.PictureBox pictureBoxDijagonala1;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.Button buttonX;
         private System.Windows.Forms.Button buttonO;
@@ -444,7 +411,6 @@
         private System.Windows.Forms.Label labelIgrac;
         private System.Windows.Forms.Panel panelVodoravni;
         private System.Windows.Forms.Panel panelUspravni;
-        private System.Windows.Forms.PictureBox pictureBoxDijagonala2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
     }
