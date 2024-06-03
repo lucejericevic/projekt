@@ -87,228 +87,207 @@
             // 
             // igrac2
             // 
-            this.igrac2.Location = new System.Drawing.Point(276, 580);
-            this.igrac2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.igrac2.Location = new System.Drawing.Point(207, 471);
             this.igrac2.Name = "igrac2";
-            this.igrac2.Size = new System.Drawing.Size(104, 186);
+            this.igrac2.Size = new System.Drawing.Size(78, 151);
             this.igrac2.TabIndex = 0;
             this.igrac2.TabStop = false;
             // 
             // igrac3
             // 
-            this.igrac3.Location = new System.Drawing.Point(387, 580);
-            this.igrac3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.igrac3.Location = new System.Drawing.Point(290, 471);
             this.igrac3.Name = "igrac3";
-            this.igrac3.Size = new System.Drawing.Size(104, 186);
+            this.igrac3.Size = new System.Drawing.Size(78, 151);
             this.igrac3.TabIndex = 1;
             this.igrac3.TabStop = false;
             // 
             // igrac10
             // 
-            this.igrac10.Location = new System.Drawing.Point(1161, 580);
-            this.igrac10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.igrac10.Location = new System.Drawing.Point(871, 471);
             this.igrac10.Name = "igrac10";
-            this.igrac10.Size = new System.Drawing.Size(104, 186);
+            this.igrac10.Size = new System.Drawing.Size(78, 151);
             this.igrac10.TabIndex = 3;
             this.igrac10.TabStop = false;
             // 
             // igrac1
             // 
-            this.igrac1.Location = new System.Drawing.Point(165, 580);
-            this.igrac1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.igrac1.Location = new System.Drawing.Point(124, 471);
             this.igrac1.Name = "igrac1";
-            this.igrac1.Size = new System.Drawing.Size(104, 186);
+            this.igrac1.Size = new System.Drawing.Size(78, 151);
             this.igrac1.TabIndex = 2;
             this.igrac1.TabStop = false;
             // 
             // igrac8
             // 
-            this.igrac8.Location = new System.Drawing.Point(940, 580);
-            this.igrac8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.igrac8.Location = new System.Drawing.Point(705, 471);
             this.igrac8.Name = "igrac8";
-            this.igrac8.Size = new System.Drawing.Size(104, 186);
+            this.igrac8.Size = new System.Drawing.Size(78, 151);
             this.igrac8.TabIndex = 5;
             this.igrac8.TabStop = false;
             // 
             // igrac9
             // 
-            this.igrac9.Location = new System.Drawing.Point(1051, 580);
-            this.igrac9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.igrac9.Location = new System.Drawing.Point(788, 471);
             this.igrac9.Name = "igrac9";
-            this.igrac9.Size = new System.Drawing.Size(104, 186);
+            this.igrac9.Size = new System.Drawing.Size(78, 151);
             this.igrac9.TabIndex = 4;
             this.igrac9.TabStop = false;
             // 
             // igrac7
             // 
-            this.igrac7.Location = new System.Drawing.Point(829, 580);
-            this.igrac7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.igrac7.Location = new System.Drawing.Point(622, 471);
             this.igrac7.Name = "igrac7";
-            this.igrac7.Size = new System.Drawing.Size(104, 186);
+            this.igrac7.Size = new System.Drawing.Size(78, 151);
             this.igrac7.TabIndex = 7;
             this.igrac7.TabStop = false;
             // 
             // igrac6
             // 
-            this.igrac6.Location = new System.Drawing.Point(719, 580);
-            this.igrac6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.igrac6.Location = new System.Drawing.Point(539, 471);
             this.igrac6.Name = "igrac6";
-            this.igrac6.Size = new System.Drawing.Size(104, 186);
+            this.igrac6.Size = new System.Drawing.Size(78, 151);
             this.igrac6.TabIndex = 6;
             this.igrac6.TabStop = false;
             // 
             // igrac5
             // 
-            this.igrac5.Location = new System.Drawing.Point(608, 580);
-            this.igrac5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.igrac5.Location = new System.Drawing.Point(456, 471);
             this.igrac5.Name = "igrac5";
-            this.igrac5.Size = new System.Drawing.Size(104, 186);
+            this.igrac5.Size = new System.Drawing.Size(78, 151);
             this.igrac5.TabIndex = 9;
             this.igrac5.TabStop = false;
             // 
             // igrac4
             // 
-            this.igrac4.Location = new System.Drawing.Point(497, 580);
-            this.igrac4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.igrac4.Location = new System.Drawing.Point(373, 471);
             this.igrac4.Name = "igrac4";
-            this.igrac4.Size = new System.Drawing.Size(104, 186);
+            this.igrac4.Size = new System.Drawing.Size(78, 151);
             this.igrac4.TabIndex = 8;
             this.igrac4.TabStop = false;
             // 
             // spilKarata
             // 
-            this.spilKarata.Location = new System.Drawing.Point(16, 325);
-            this.spilKarata.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.spilKarata.Location = new System.Drawing.Point(12, 264);
             this.spilKarata.Name = "spilKarata";
-            this.spilKarata.Size = new System.Drawing.Size(208, 105);
+            this.spilKarata.Size = new System.Drawing.Size(156, 85);
             this.spilKarata.TabIndex = 10;
             this.spilKarata.TabStop = false;
             this.spilKarata.Click += new System.EventHandler(this.spilKarata_Click);
             // 
             // AIBacena
             // 
-
-            this.AIBacena.Location = new System.Drawing.Point(515, 188);
+            this.AIBacena.Location = new System.Drawing.Point(386, 153);
+            this.AIBacena.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AIBacena.Name = "AIBacena";
-            this.AIBacena.Size = new System.Drawing.Size(127, 183);
+            this.AIBacena.Size = new System.Drawing.Size(95, 149);
             this.AIBacena.TabIndex = 12;
             this.AIBacena.TabStop = false;
-
             // 
             // AI5
             // 
-
-            this.AI5.Location = new System.Drawing.Point(456, 12);
+            this.AI5.Location = new System.Drawing.Point(342, 10);
+            this.AI5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AI5.Name = "AI5";
-            this.AI5.Size = new System.Drawing.Size(78, 151);
+            this.AI5.Size = new System.Drawing.Size(58, 123);
             this.AI5.TabIndex = 22;
             this.AI5.TabStop = false;
-
             // 
             // AI4
             // 
-
-            this.AI4.Location = new System.Drawing.Point(373, 12);
+            this.AI4.Location = new System.Drawing.Point(280, 10);
+            this.AI4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AI4.Name = "AI4";
-            this.AI4.Size = new System.Drawing.Size(78, 151);
+            this.AI4.Size = new System.Drawing.Size(58, 123);
             this.AI4.TabIndex = 21;
             this.AI4.TabStop = false;
-
             // 
             // AI7
             // 
-
-            this.AI7.Location = new System.Drawing.Point(622, 12);
+            this.AI7.Location = new System.Drawing.Point(466, 10);
+            this.AI7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AI7.Name = "AI7";
-            this.AI7.Size = new System.Drawing.Size(78, 151);
+            this.AI7.Size = new System.Drawing.Size(58, 123);
             this.AI7.TabIndex = 20;
             this.AI7.TabStop = false;
-
             // 
             // AI6
             // 
-
-            this.AI6.Location = new System.Drawing.Point(539, 12);
+            this.AI6.Location = new System.Drawing.Point(404, 10);
+            this.AI6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AI6.Name = "AI6";
-            this.AI6.Size = new System.Drawing.Size(78, 151);
+            this.AI6.Size = new System.Drawing.Size(58, 123);
             this.AI6.TabIndex = 19;
             this.AI6.TabStop = false;
-
             // 
             // AI8
             // 
-
-            this.AI8.Location = new System.Drawing.Point(705, 12);
+            this.AI8.Location = new System.Drawing.Point(529, 10);
+            this.AI8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AI8.Name = "AI8";
-            this.AI8.Size = new System.Drawing.Size(78, 151);
+            this.AI8.Size = new System.Drawing.Size(58, 123);
             this.AI8.TabIndex = 18;
             this.AI8.TabStop = false;
-
             // 
             // AI9
             // 
-
-            this.AI9.Location = new System.Drawing.Point(788, 12);
+            this.AI9.Location = new System.Drawing.Point(591, 10);
+            this.AI9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AI9.Name = "AI9";
-            this.AI9.Size = new System.Drawing.Size(78, 151);
+            this.AI9.Size = new System.Drawing.Size(58, 123);
             this.AI9.TabIndex = 17;
             this.AI9.TabStop = false;
-
             // 
             // AI10
             // 
-
-            this.AI10.Location = new System.Drawing.Point(871, 12);
+            this.AI10.Location = new System.Drawing.Point(653, 10);
+            this.AI10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AI10.Name = "AI10";
-            this.AI10.Size = new System.Drawing.Size(78, 151);
+            this.AI10.Size = new System.Drawing.Size(58, 123);
             this.AI10.TabIndex = 16;
             this.AI10.TabStop = false;
-
             // 
             // AI1
             // 
-
-            this.AI1.Location = new System.Drawing.Point(124, 12);
+            this.AI1.Location = new System.Drawing.Point(93, 10);
+            this.AI1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AI1.Name = "AI1";
-            this.AI1.Size = new System.Drawing.Size(78, 151);
+            this.AI1.Size = new System.Drawing.Size(58, 123);
             this.AI1.TabIndex = 15;
             this.AI1.TabStop = false;
-
+            // 
             // AI3
             // 
-
-            this.AI3.Location = new System.Drawing.Point(290, 12);
+            this.AI3.Location = new System.Drawing.Point(218, 10);
+            this.AI3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AI3.Name = "AI3";
-            this.AI3.Size = new System.Drawing.Size(78, 151);
+            this.AI3.Size = new System.Drawing.Size(58, 123);
             this.AI3.TabIndex = 14;
             this.AI3.TabStop = false;
-
+            // 
             // AI2
             // 
-            this.AI2.Location = new System.Drawing.Point(207, 12);
+            this.AI2.Location = new System.Drawing.Point(155, 10);
+            this.AI2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AI2.Name = "AI2";
-            this.AI2.Size = new System.Drawing.Size(78, 151);
+            this.AI2.Size = new System.Drawing.Size(58, 123);
             this.AI2.TabIndex = 13;
             this.AI2.TabStop = false;
-
             // 
             // igracBacena
             // 
-
-            this.igracBacena.Location = new System.Drawing.Point(442, 264);
+            this.igracBacena.Location = new System.Drawing.Point(332, 214);
+            this.igracBacena.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.igracBacena.Name = "igracBacena";
-            this.igracBacena.Size = new System.Drawing.Size(127, 183);
+            this.igracBacena.Size = new System.Drawing.Size(95, 149);
             this.igracBacena.TabIndex = 23;
             this.igracBacena.TabStop = false;
-
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(1292, 683);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(969, 555);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(111, 16);
+            this.label1.Size = new System.Drawing.Size(91, 13);
             this.label1.TabIndex = 24;
             this.label1.Text = "BODOVI IGRAČA";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -316,39 +295,35 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(1292, 54);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(969, 44);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(93, 16);
+            this.label2.Size = new System.Drawing.Size(76, 13);
             this.label2.TabIndex = 25;
             this.label2.Text = "BODOVI AI-JA";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(1296, 74);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Location = new System.Drawing.Point(972, 60);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(96, 22);
+            this.textBox1.Size = new System.Drawing.Size(73, 20);
             this.textBox1.TabIndex = 26;
             this.textBox1.Visible = false;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(1296, 703);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox2.Location = new System.Drawing.Point(972, 571);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(96, 22);
+            this.textBox2.Size = new System.Drawing.Size(73, 20);
             this.textBox2.TabIndex = 27;
             this.textBox2.Visible = false;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(276, 522);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Location = new System.Drawing.Point(207, 424);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 28);
+            this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 28;
             this.button1.Text = "Peškaj\r\n";
             this.button1.UseVisualStyleBackColor = true;
@@ -356,33 +331,30 @@
             // 
             // igracPeska
             // 
-
-            this.igracPeska.Location = new System.Drawing.Point(210, 321);
+            this.igracPeska.Location = new System.Drawing.Point(158, 261);
+            this.igracPeska.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.igracPeska.Name = "igracPeska";
-            this.igracPeska.Size = new System.Drawing.Size(75, 97);
+            this.igracPeska.Size = new System.Drawing.Size(56, 79);
             this.igracPeska.TabIndex = 29;
             this.igracPeska.TabStop = false;
+            // 
             // AIPeska
             // 
-
-
-            this.AIPeska.Location = new System.Drawing.Point(210, 218);
+            this.AIPeska.Location = new System.Drawing.Point(158, 177);
+            this.AIPeska.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AIPeska.Name = "AIPeska";
-            this.AIPeska.Size = new System.Drawing.Size(75, 97);
+            this.AIPeska.Size = new System.Drawing.Size(56, 79);
             this.AIPeska.TabIndex = 30;
             this.AIPeska.TabStop = false;
-
             // 
             // Treseta
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-
-            this.ClientSize = new System.Drawing.Size(1084, 651);
+            this.ClientSize = new System.Drawing.Size(1081, 672);
             this.Controls.Add(this.AIPeska);
             this.Controls.Add(this.igracPeska);
-
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
@@ -411,7 +383,6 @@
             this.Controls.Add(this.igrac1);
             this.Controls.Add(this.igrac3);
             this.Controls.Add(this.igrac2);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Treseta";
             this.Text = "Trešeta";
             this.Load += new System.EventHandler(this.Treseta_Load);
