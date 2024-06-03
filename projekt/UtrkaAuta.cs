@@ -333,7 +333,7 @@ namespace projekt
                     break;
             }
         }
-
+         //kad dovrsimo prokjekt, u zavrsni triba dodat file hit.wav u bin->Debug. Jedino tako će radit jer ova funkcija iz tu povlaći taj sound.
         private void Zvuk()
         {
             System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"hit.wav");
