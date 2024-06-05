@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IgraceveKarte.Cs" />
     <Compile Include="Karta.cs" />
     <Compile Include="Izbornik.cs">
       <SubType>Form</SubType>
