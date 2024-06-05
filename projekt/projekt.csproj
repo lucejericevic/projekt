@@ -73,6 +73,12 @@
     <Compile Include="UtrkaAuta.designer.cs">
       <DependentUpon>UtrkaAuta.cs</DependentUpon>
     </Compile>
+    <Compile Include="Zmija.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zmija.Designer.cs">
+      <DependentUpon>Zmija.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Izbornik.resx">
       <DependentUpon>Izbornik.cs</DependentUpon>
     </EmbeddedResource>
@@ -94,6 +100,9 @@
     </Compile>
     <EmbeddedResource Include="UtrkaAuta.resx">
       <DependentUpon>UtrkaAuta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zmija.resx">
+      <DependentUpon>Zmija.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
