@@ -13,7 +13,7 @@ namespace projekt
         string Zog;
         int Broj;
         double Vrijednost;
-        string pathSlika = " ";
+        string pathSlika;
         List<Karta> spil = new List <Karta> ();
 
         private void PocetniSpil()
@@ -52,23 +52,38 @@ namespace projekt
                 }
 
                 spil.Add(k);
-                k.pathSlika = k.Zog + "_" + k.Broj + ".png";
+                k.pathSlika = k.Zog + "_" + k.Broj + ".jpg";
                 
             }
         }
 
         private void RandomSpil(List<Karta> spil)
         {
+            List<Karta> RndSpil = new List<Karta>();
             Karta T;
             int n = spil.Count;
-            while (n > 1)
-
+            for (int i = 0; i < n; i++)
             {
-                n--;
-                int k = (n + 1);
-                T = spil[k];
-                spil[k] = spil[n];
-                spil[n] = T;
+                while (n > 1)
+
+                {
+                    n--;
+                    int k = (n + 1);
+                    T = spil[k];
+                    spil[k] = spil[n];
+                    spil[n] = T;
+                }
+                RndSpil.Add(spil[i]);
+            }
+        }
+
+        public void IgraceveKarte(List<Karta>RndSpil)
+        {
+            List<Karta> Igraceve = new List<Karta>();
+            for(int i=0;i<10;i++)
+            {
+                Igraceve.Add(RndSpil[i]);
+
             }
         }
     }
