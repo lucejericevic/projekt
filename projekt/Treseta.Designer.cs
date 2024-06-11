@@ -101,6 +101,7 @@
             this.AIBacena.Margin = new System.Windows.Forms.Padding(2);
             this.AIBacena.Name = "AIBacena";
             this.AIBacena.Size = new System.Drawing.Size(93, 146);
+            this.AIBacena.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.AIBacena.TabIndex = 12;
             this.AIBacena.TabStop = false;
             // 
@@ -110,6 +111,7 @@
             this.igracBacena.Margin = new System.Windows.Forms.Padding(2);
             this.igracBacena.Name = "igracBacena";
             this.igracBacena.Size = new System.Drawing.Size(93, 146);
+            this.igracBacena.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.igracBacena.TabIndex = 23;
             this.igracBacena.TabStop = false;
             // 
@@ -133,7 +135,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(207, 424);
+            this.button1.Location = new System.Drawing.Point(207, 443);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 28;
@@ -142,7 +144,7 @@
             // 
             // AIPeska
             // 
-            this.AIPeska.Location = new System.Drawing.Point(207, 201);
+            this.AIPeska.Location = new System.Drawing.Point(207, 226);
             this.AIPeska.Margin = new System.Windows.Forms.Padding(2);
             this.AIPeska.Name = "AIPeska";
             this.AIPeska.Size = new System.Drawing.Size(75, 104);
@@ -161,7 +163,7 @@
             // 
             // pictureBox11
             // 
-            this.pictureBox11.Location = new System.Drawing.Point(207, 309);
+            this.pictureBox11.Location = new System.Drawing.Point(207, 334);
             this.pictureBox11.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(75, 104);
@@ -267,6 +269,7 @@
             this.igrac10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.igrac10.TabIndex = 55;
             this.igrac10.TabStop = false;
+            this.igrac10.Click += new System.EventHandler(this.igrac10_Click);
             // 
             // igrac9
             // 
@@ -277,6 +280,7 @@
             this.igrac9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.igrac9.TabIndex = 54;
             this.igrac9.TabStop = false;
+            this.igrac9.Click += new System.EventHandler(this.igrac9_Click);
             // 
             // igrac8
             // 
@@ -287,6 +291,7 @@
             this.igrac8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.igrac8.TabIndex = 53;
             this.igrac8.TabStop = false;
+            this.igrac8.Click += new System.EventHandler(this.igrac8_Click);
             // 
             // igrac7
             // 
@@ -297,6 +302,7 @@
             this.igrac7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.igrac7.TabIndex = 52;
             this.igrac7.TabStop = false;
+            this.igrac7.Click += new System.EventHandler(this.igrac7_Click);
             // 
             // igrac6
             // 
@@ -307,6 +313,7 @@
             this.igrac6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.igrac6.TabIndex = 51;
             this.igrac6.TabStop = false;
+            this.igrac6.Click += new System.EventHandler(this.igrac6_Click);
             // 
             // igrac5
             // 
@@ -317,6 +324,7 @@
             this.igrac5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.igrac5.TabIndex = 60;
             this.igrac5.TabStop = false;
+            this.igrac5.Click += new System.EventHandler(this.igrac5_Click);
             // 
             // igrac4
             // 
@@ -327,6 +335,7 @@
             this.igrac4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.igrac4.TabIndex = 59;
             this.igrac4.TabStop = false;
+            this.igrac4.Click += new System.EventHandler(this.igrac4_Click);
             // 
             // igrac3
             // 
@@ -337,6 +346,7 @@
             this.igrac3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.igrac3.TabIndex = 58;
             this.igrac3.TabStop = false;
+            this.igrac3.Click += new System.EventHandler(this.igrac3_Click);
             // 
             // igrac2
             // 
@@ -347,6 +357,7 @@
             this.igrac2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.igrac2.TabIndex = 57;
             this.igrac2.TabStop = false;
+            this.igrac2.Click += new System.EventHandler(this.igrac2_Click);
             // 
             // igrac1
             // 
@@ -357,6 +368,7 @@
             this.igrac1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.igrac1.TabIndex = 56;
             this.igrac1.TabStop = false;
+            this.igrac1.Click += new System.EventHandler(this.igrac1_Click);
             // 
             // btnIgraj
             // 
