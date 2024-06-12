@@ -13,7 +13,7 @@ namespace projekt
         string Zog;
         int Broj;
         double Vrijednost;
-        string pathSlika;
+        public string pathSlika { get; set; }
         List<Karta> spil = new List <Karta> ();
 
         public void PocetniSpil()

@@ -30,14 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Treseta));
             this.pbSpil = new System.Windows.Forms.PictureBox();
-            this.AIBacena = new System.Windows.Forms.PictureBox();
+            this.aiBacena = new System.Windows.Forms.PictureBox();
             this.igracBacena = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.AIPeska = new System.Windows.Forms.PictureBox();
+            this.aiPeska = new System.Windows.Forms.PictureBox();
             this.ai1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.igracPeska = new System.Windows.Forms.PictureBox();
             this.ai2 = new System.Windows.Forms.PictureBox();
             this.ai3 = new System.Windows.Forms.PictureBox();
             this.ai4 = new System.Windows.Forms.PictureBox();
@@ -58,12 +58,13 @@
             this.igrac2 = new System.Windows.Forms.PictureBox();
             this.igrac1 = new System.Windows.Forms.PictureBox();
             this.btnIgraj = new System.Windows.Forms.Button();
+            this.btnPosloziKarte = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbSpil)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AIBacena)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aiBacena)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.igracBacena)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AIPeska)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aiPeska)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ai1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.igracPeska)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ai2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ai3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ai4)).BeginInit();
@@ -95,15 +96,15 @@
             this.pbSpil.TabIndex = 10;
             this.pbSpil.TabStop = false;
             // 
-            // AIBacena
+            // aiBacena
             // 
-            this.AIBacena.Location = new System.Drawing.Point(529, 201);
-            this.AIBacena.Margin = new System.Windows.Forms.Padding(2);
-            this.AIBacena.Name = "AIBacena";
-            this.AIBacena.Size = new System.Drawing.Size(93, 146);
-            this.AIBacena.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.AIBacena.TabIndex = 12;
-            this.AIBacena.TabStop = false;
+            this.aiBacena.Location = new System.Drawing.Point(529, 201);
+            this.aiBacena.Margin = new System.Windows.Forms.Padding(2);
+            this.aiBacena.Name = "aiBacena";
+            this.aiBacena.Size = new System.Drawing.Size(93, 146);
+            this.aiBacena.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.aiBacena.TabIndex = 12;
+            this.aiBacena.TabStop = false;
             // 
             // igracBacena
             // 
@@ -142,14 +143,14 @@
             this.button1.Text = "Peškaj\r\n";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // AIPeska
+            // aiPeska
             // 
-            this.AIPeska.Location = new System.Drawing.Point(207, 226);
-            this.AIPeska.Margin = new System.Windows.Forms.Padding(2);
-            this.AIPeska.Name = "AIPeska";
-            this.AIPeska.Size = new System.Drawing.Size(75, 104);
-            this.AIPeska.TabIndex = 30;
-            this.AIPeska.TabStop = false;
+            this.aiPeska.Location = new System.Drawing.Point(207, 226);
+            this.aiPeska.Margin = new System.Windows.Forms.Padding(2);
+            this.aiPeska.Name = "aiPeska";
+            this.aiPeska.Size = new System.Drawing.Size(75, 104);
+            this.aiPeska.TabIndex = 30;
+            this.aiPeska.TabStop = false;
             // 
             // ai1
             // 
@@ -161,14 +162,14 @@
             this.ai1.TabIndex = 33;
             this.ai1.TabStop = false;
             // 
-            // pictureBox11
+            // igracPeska
             // 
-            this.pictureBox11.Location = new System.Drawing.Point(207, 334);
-            this.pictureBox11.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(75, 104);
-            this.pictureBox11.TabIndex = 41;
-            this.pictureBox11.TabStop = false;
+            this.igracPeska.Location = new System.Drawing.Point(207, 334);
+            this.igracPeska.Margin = new System.Windows.Forms.Padding(2);
+            this.igracPeska.Name = "igracPeska";
+            this.igracPeska.Size = new System.Drawing.Size(75, 104);
+            this.igracPeska.TabIndex = 41;
+            this.igracPeska.TabStop = false;
             // 
             // ai2
             // 
@@ -380,12 +381,22 @@
             this.btnIgraj.UseVisualStyleBackColor = true;
             this.btnIgraj.Click += new System.EventHandler(this.btnIgraj_Click);
             // 
+            // btnPosloziKarte
+            // 
+            this.btnPosloziKarte.Location = new System.Drawing.Point(13, 454);
+            this.btnPosloziKarte.Name = "btnPosloziKarte";
+            this.btnPosloziKarte.Size = new System.Drawing.Size(75, 23);
+            this.btnPosloziKarte.TabIndex = 62;
+            this.btnPosloziKarte.Text = "SLOŽI KARTE";
+            this.btnPosloziKarte.UseVisualStyleBackColor = true;
+            // 
             // Treseta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1081, 672);
+            this.Controls.Add(this.btnPosloziKarte);
             this.Controls.Add(this.btnIgraj);
             this.Controls.Add(this.igrac5);
             this.Controls.Add(this.igrac4);
@@ -406,24 +417,24 @@
             this.Controls.Add(this.ai4);
             this.Controls.Add(this.ai3);
             this.Controls.Add(this.ai2);
-            this.Controls.Add(this.pictureBox11);
+            this.Controls.Add(this.igracPeska);
             this.Controls.Add(this.ai1);
-            this.Controls.Add(this.AIPeska);
+            this.Controls.Add(this.aiPeska);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.igracBacena);
-            this.Controls.Add(this.AIBacena);
+            this.Controls.Add(this.aiBacena);
             this.Controls.Add(this.pbSpil);
             this.Name = "Treseta";
             this.Text = "Trešeta";
             this.Load += new System.EventHandler(this.Treseta_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbSpil)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AIBacena)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aiBacena)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.igracBacena)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AIPeska)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aiPeska)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ai1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.igracPeska)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ai2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ai3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ai4)).EndInit();
@@ -450,14 +461,14 @@
 
         #endregion
         private System.Windows.Forms.PictureBox pbSpil;
-        private System.Windows.Forms.PictureBox AIBacena;
+        private System.Windows.Forms.PictureBox aiBacena;
         private System.Windows.Forms.PictureBox igracBacena;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.PictureBox AIPeska;
+        private System.Windows.Forms.PictureBox aiPeska;
         private System.Windows.Forms.PictureBox ai1;
-        private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.PictureBox igracPeska;
         private System.Windows.Forms.PictureBox ai2;
         private System.Windows.Forms.PictureBox ai3;
         private System.Windows.Forms.PictureBox ai4;
@@ -478,5 +489,6 @@
         private System.Windows.Forms.PictureBox igrac2;
         private System.Windows.Forms.PictureBox igrac1;
         private System.Windows.Forms.Button btnIgraj;
+        private System.Windows.Forms.Button btnPosloziKarte;
     }
 }

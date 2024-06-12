@@ -17,6 +17,47 @@ namespace projekt
             InitializeComponent();
         }
 
+        // file.txt !! C:/Users/Documents/file.txt !! /files/file.txt !! ../../slike/file.txt
+
+
+        private void azuriraj_stanje( Stanje stanje, bool igracprvi )
+        {            
+
+            igrac1.ImageLocation = stanje.igrac[0].pathSlika;
+            igrac2.ImageLocation = stanje.igrac[1].pathSlika;
+            igrac3.ImageLocation = stanje.igrac[2].pathSlika;
+            igrac4.ImageLocation = stanje.igrac[3].pathSlika;
+            igrac5.ImageLocation = stanje.igrac[4].pathSlika;
+            igrac6.ImageLocation = stanje.igrac[5].pathSlika;
+            igrac7.ImageLocation = stanje.igrac[6].pathSlika;
+            igrac8.ImageLocation = stanje.igrac[7].pathSlika;
+            igrac9.ImageLocation = stanje.igrac[8].pathSlika;
+            igrac10.ImageLocation = stanje.igrac[9].pathSlika;
+
+            //aiBacena - ai bacena; igracBacena - igrac bacena
+
+            if (igracprvi)
+            {
+                igracBacena.ImageLocation = stanje.donja_na_stolu.pathSlika;
+                aiBacena.ImageLocation = stanje.gornja_na_stolu.pathSlika;
+
+
+            }
+            else
+            {
+                igracBacena.ImageLocation = stanje.gornja_na_stolu.pathSlika;
+                aiBacena.ImageLocation = stanje.donja_na_stolu.pathSlika;
+            }
+
+            if ( stanje.prazan_spil )
+            {
+                pbSpil.Image = null;
+            }
+
+
+        }
+
+
         private void Treseta_Load(object sender, EventArgs e)
         {
 

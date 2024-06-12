@@ -61,6 +61,7 @@
     <Compile Include="KrizicKruzic.Designer.cs">
       <DependentUpon>KrizicKruzic.cs</DependentUpon>
     </Compile>
+    <Compile Include="Stanje.cs" />
     <Compile Include="Treseta.cs">
       <SubType>Form</SubType>
     </Compile>
