@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace projekt
 {
-    internal class Karta
+    public class Karta
     {
         string Zog;
         int Broj;
@@ -16,7 +16,7 @@ namespace projekt
         string pathSlika;
         List<Karta> spil = new List <Karta> ();
 
-        private void PocetniSpil()
+        public void PocetniSpil()
         {
             for(int i = 0; i < 40; i++)
             {
@@ -57,7 +57,7 @@ namespace projekt
             }
         }
 
-        private void RandomSpil(List<Karta> spil)
+        public void RandomSpil(List<Karta> spil)
         {
             List<Karta> RndSpil = new List<Karta>();
             Karta T;
