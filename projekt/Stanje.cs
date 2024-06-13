@@ -16,6 +16,7 @@ namespace projekt
         public bool igracprvi { get; set; }
         public List <Karta> dobiveneIgrac { get; set; }
         public List <Karta> dobiveneAI { get; set; }
+        public List <Karta> spil { get; set; }
 
         public Stanje(List<Karta> dobiveneAI, List<Karta> dobiveneIgrac, List<Karta> igrac, List<Karta> racunalo, bool prazan_spil, Karta gornja_na_stolu, Karta donja_na_stolu, bool igracprvi)
         {
@@ -28,6 +29,7 @@ namespace projekt
             this.igracprvi = igracprvi;
             this.dobiveneIgrac = dobiveneIgrac;
             this.dobiveneAI = dobiveneAI;
+            this.spil = spil;
             
 
             
