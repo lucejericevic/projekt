@@ -10,6 +10,7 @@ namespace projekt
     public class Spil
     {
         public List<Karta> spil { get; set; }
+         
 
 
         public Spil()         
@@ -18,7 +19,7 @@ namespace projekt
             this.spil = PocetniSpil();
             Random pjenusavi_mjesanac = new Random();
             pjenusavi_mjesanac.Promjesaj<Karta>(this.spil);
-        
+            
         }
 
         public List<Karta> PocetniSpil()

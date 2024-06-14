@@ -38,15 +38,15 @@ namespace projekt
 
             if (stanje.igracprvi)
             {
-                igracBacena.ImageLocation = stanje.donja_na_stolu.pathSlika;
-                aiBacena.ImageLocation = stanje.gornja_na_stolu.pathSlika;
+                donjaBacena.ImageLocation = stanje.donja_na_stolu.pathSlika;
+                gornjaBacena.ImageLocation = stanje.gornja_na_stolu.pathSlika;
 
 
             }
             else
             {
-                igracBacena.ImageLocation = stanje.gornja_na_stolu.pathSlika;
-                aiBacena.ImageLocation = stanje.donja_na_stolu.pathSlika;
+                donjaBacena.ImageLocation = stanje.gornja_na_stolu.pathSlika;
+                gornjaBacena.ImageLocation = stanje.donja_na_stolu.pathSlika;
             }
 
             if ( stanje.prazan_spil )
@@ -58,7 +58,7 @@ namespace projekt
         }
 
 
-        private bool provjeri_zog(Stanje stanje, string zog, Karta bacenakarta)
+        public bool provjeri_zog(Stanje stanje, string zog, Karta bacenakarta)
         {
 
 
@@ -145,63 +145,224 @@ namespace projekt
 
         private void igrac1_Click(object sender, EventArgs e)
         {
-            igracBacena.Image = igrac1.Image;
-            igrac2.Image = null ;
+            if(this.StanjeIgre.igracprvi)
+            {
+                donjaBacena.Image = igrac1.Image;
+                igrac1.Image = null;
+            }
+            else
+            {
+                bool valjalizog = provjeri_zog(StanjeIgre, StanjeIgre.igrac[0].Zog, this.StanjeIgre.igrac[0]);
+                if (valjalizog)
+                {
+                    gornjaBacena.Image = igrac1.Image;
+                    igrac1.Image = null;
+                }
+                else
+                {
+                    MessageBox.Show("Neispravan potez, krivi zog!");
+                }
+            }
+             
         }
 
         private void igrac2_Click(object sender, EventArgs e)
         {
-            igracBacena.Image = igrac2.Image;
-            igrac1.Image = null ;
+            if (this.StanjeIgre.igracprvi)
+            {
+                donjaBacena.Image = igrac2.Image;
+                igrac2.Image = null;
+            }
+            else
+            {
+                bool valjalizog = provjeri_zog(StanjeIgre, StanjeIgre.igrac[1].Zog, this.StanjeIgre.igrac[1]);
+                if (valjalizog)
+                {
+                    gornjaBacena.Image = igrac2.Image;
+                    igrac2.Image = null;
+                }
+                else
+                {
+                    MessageBox.Show("Neispravan potez, krivi zog!");
+                }
+            }
         }
 
         private void igrac3_Click(object sender, EventArgs e)
         {
-            igracBacena.Image = igrac3.Image;
-            igrac1.Image = null;
+            if (this.StanjeIgre.igracprvi)
+            {
+                donjaBacena.Image = igrac3.Image;
+                igrac3.Image = null;
+            }
+            else
+            {
+                bool valjalizog = provjeri_zog(StanjeIgre, StanjeIgre.igrac[2].Zog, this.StanjeIgre.igrac[2]);
+                if (valjalizog)
+                {
+                    gornjaBacena.Image = igrac3.Image;
+                    igrac3.Image = null;
+                }
+                else
+                {
+                    MessageBox.Show("Neispravan potez, krivi zog!");
+                }
+            }
         }
 
         private void igrac4_Click(object sender, EventArgs e)
         {
-            igracBacena.Image = igrac4.Image;
-            igrac1.Image = null;
+            if (this.StanjeIgre.igracprvi)
+            {
+                donjaBacena.Image = igrac4.Image;
+                igrac4.Image = null;
+            }
+            else
+            {
+                bool valjalizog = provjeri_zog(StanjeIgre, StanjeIgre.igrac[3].Zog, this.StanjeIgre.igrac[3]);
+                if (valjalizog)
+                {
+                    gornjaBacena.Image = igrac4.Image;
+                    igrac4.Image = null;
+                }
+                else 
+                {
+                    MessageBox.Show("Neispravan potez, krivi zog!");
+                }
+            }
         }
 
         private void igrac5_Click(object sender, EventArgs e)
         {
-            igracBacena.Image = igrac5.Image;
-            igrac1.Image = null;
+            if (this.StanjeIgre.igracprvi)
+            {
+                donjaBacena.Image = igrac5.Image;
+                igrac5.Image = null;
+            }
+            else
+            {
+                bool valjalizog = provjeri_zog(StanjeIgre, StanjeIgre.igrac[4].Zog, this.StanjeIgre.igrac[4]);
+                if (valjalizog)
+                {
+                    gornjaBacena.Image = igrac5.Image;
+                    igrac5.Image = null;
+                }
+                else 
+                { 
+                    MessageBox.Show("Neispravan potez, krivi zog!");
+                }
+            }
         }
 
         private void igrac6_Click(object sender, EventArgs e)
         {
-            igracBacena.Image = igrac6.Image;
-            igrac1.Image = null;
+            if (this.StanjeIgre.igracprvi)
+            {
+                donjaBacena.Image = igrac6.Image;
+                igrac6.Image = null;
+            }
+            else
+            {
+                bool valjalizog = provjeri_zog(StanjeIgre, StanjeIgre.igrac[5].Zog, this.StanjeIgre.igrac[5]);
+                if (valjalizog)
+                {
+                    gornjaBacena.Image = igrac6.Image;
+                    igrac6.Image = null;
+                }
+                else
+                {
+                    MessageBox.Show("Neispravan potez, krivi zog!");
+                }
+            }
         }
 
         private void igrac7_Click(object sender, EventArgs e)
         {
-            igracBacena.Image = igrac7.Image;
-            igrac1.Image = null;
+            if (this.StanjeIgre.igracprvi)
+            {
+                donjaBacena.Image = igrac7.Image;
+                igrac7.Image = null;
+            }
+            else
+            {
+                bool valjalizog = provjeri_zog(StanjeIgre, StanjeIgre.igrac[6].Zog, this.StanjeIgre.igrac[6]);
+                if (valjalizog)
+                {
+                    gornjaBacena.Image = igrac7.Image;
+                    igrac7.Image = null;
+                }
+                else
+                {
+                    MessageBox.Show("Neispravan potez, krivi zog!");
+                }
+            }
         }
 
         private void igrac8_Click(object sender, EventArgs e)
         {
-            igracBacena.Image = igrac8.Image;
-            igrac1.Image = null;
+            if (this.StanjeIgre.igracprvi)
+            {
+                donjaBacena.Image = igrac8.Image;
+                igrac8.Image = null;
+            }
+            else
+            {
+                bool valjalizog = provjeri_zog(StanjeIgre, StanjeIgre.igrac[7].Zog, this.StanjeIgre.igrac[7]);
+                if (valjalizog)
+                {
+                    gornjaBacena.Image = igrac8.Image;
+                    igrac8.Image = null;
+                }
+                else
+                {
+                    MessageBox.Show("Neispravan potez, krivi zog!");
+                }
+            }
         }
 
         private void igrac9_Click(object sender, EventArgs e)
         {
-            igracBacena.Image = igrac9.Image;
-            igrac1.Image = null;
+            if (this.StanjeIgre.igracprvi)
+            {
+                donjaBacena.Image = igrac9.Image;
+                igrac9.Image = null;
+            }
+            else
+            {
+                bool valjalizog = provjeri_zog(StanjeIgre, StanjeIgre.igrac[8].Zog, this.StanjeIgre.igrac[8]);
+                if (valjalizog)
+                {
+                    gornjaBacena.Image = igrac9.Image;
+                    igrac9.Image = null;
+                }
+                else
+                {
+                    MessageBox.Show("Neispravan potez, krivi zog!");
+                }
+            }
         }
 
         private void igrac10_Click(object sender, EventArgs e)
         {
-            igracBacena.Image = igrac10.Image;
-            igrac1.Image = null;
-             
+
+            if (this.StanjeIgre.igracprvi)
+            {
+                donjaBacena.Image = igrac10.Image;
+                igrac10.Image = null;
+            }
+            else
+            {
+                bool valjalizog = provjeri_zog(StanjeIgre, StanjeIgre.igrac[0].Zog, this.StanjeIgre.igrac[0]);
+                if (valjalizog)
+                {
+                    gornjaBacena.Image = igrac10.Image;
+                    igrac10.Image = null;
+                }
+                else
+                {
+                    MessageBox.Show("Neispravan potez, krivi zog!");
+                }
+            }
         }
 
         
