@@ -30,8 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Treseta));
             this.pbSpil = new System.Windows.Forms.PictureBox();
-            this.aiBacena = new System.Windows.Forms.PictureBox();
-            this.igracBacena = new System.Windows.Forms.PictureBox();
+            this.gornjaBacena = new System.Windows.Forms.PictureBox();
+            this.donjaBacena = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -60,8 +60,8 @@
             this.btnIgraj = new System.Windows.Forms.Button();
             this.btnPosloziKarte = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbSpil)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aiBacena)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.igracBacena)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gornjaBacena)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.donjaBacena)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.aiPeska)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ai1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.igracPeska)).BeginInit();
@@ -96,25 +96,25 @@
             this.pbSpil.TabIndex = 10;
             this.pbSpil.TabStop = false;
             // 
-            // aiBacena
+            // gornjaBacena
             // 
-            this.aiBacena.Location = new System.Drawing.Point(529, 201);
-            this.aiBacena.Margin = new System.Windows.Forms.Padding(2);
-            this.aiBacena.Name = "aiBacena";
-            this.aiBacena.Size = new System.Drawing.Size(93, 146);
-            this.aiBacena.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.aiBacena.TabIndex = 12;
-            this.aiBacena.TabStop = false;
+            this.gornjaBacena.Location = new System.Drawing.Point(529, 201);
+            this.gornjaBacena.Margin = new System.Windows.Forms.Padding(2);
+            this.gornjaBacena.Name = "gornjaBacena";
+            this.gornjaBacena.Size = new System.Drawing.Size(93, 146);
+            this.gornjaBacena.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.gornjaBacena.TabIndex = 12;
+            this.gornjaBacena.TabStop = false;
             // 
-            // igracBacena
+            // donjaBacena
             // 
-            this.igracBacena.Location = new System.Drawing.Point(430, 301);
-            this.igracBacena.Margin = new System.Windows.Forms.Padding(2);
-            this.igracBacena.Name = "igracBacena";
-            this.igracBacena.Size = new System.Drawing.Size(93, 146);
-            this.igracBacena.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.igracBacena.TabIndex = 23;
-            this.igracBacena.TabStop = false;
+            this.donjaBacena.Location = new System.Drawing.Point(430, 301);
+            this.donjaBacena.Margin = new System.Windows.Forms.Padding(2);
+            this.donjaBacena.Name = "donjaBacena";
+            this.donjaBacena.Size = new System.Drawing.Size(93, 146);
+            this.donjaBacena.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.donjaBacena.TabIndex = 23;
+            this.donjaBacena.TabStop = false;
             // 
             // label1
             // 
@@ -423,15 +423,15 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.igracBacena);
-            this.Controls.Add(this.aiBacena);
+            this.Controls.Add(this.donjaBacena);
+            this.Controls.Add(this.gornjaBacena);
             this.Controls.Add(this.pbSpil);
             this.Name = "Treseta";
             this.Text = "Trešeta";
             this.Load += new System.EventHandler(this.Treseta_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbSpil)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aiBacena)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.igracBacena)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gornjaBacena)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.donjaBacena)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.aiPeska)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ai1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.igracPeska)).EndInit();
@@ -461,8 +461,8 @@
 
         #endregion
         private System.Windows.Forms.PictureBox pbSpil;
-        private System.Windows.Forms.PictureBox aiBacena;
-        private System.Windows.Forms.PictureBox igracBacena;
+        private System.Windows.Forms.PictureBox gornjaBacena;
+        private System.Windows.Forms.PictureBox donjaBacena;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
