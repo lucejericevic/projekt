@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -16,21 +17,39 @@ namespace projekt
         public bool igracprvi { get; set; }
         public List <Karta> dobiveneIgrac { get; set; }
         public List <Karta> dobiveneAI { get; set; }
-        public List <Karta> spil { get; set; }
-        
+        public Spil spil { get; set; }
 
-        public Stanje(List<Karta> dobiveneAI, List<Karta> dobiveneIgrac, List<Karta> igrac, List<Karta> racunalo, bool prazan_spil, Karta gornja_na_stolu, Karta donja_na_stolu, bool igracprvi)
+
+        public Stanje()
         {
-            
-            this.igrac = igrac;
-            this.racunalo = racunalo;
-            this.prazan_spil = prazan_spil;
-            this.gornja_na_stolu = gornja_na_stolu;
-            this.donja_na_stolu = donja_na_stolu;
-            this.igracprvi = igracprvi;
-            this.dobiveneIgrac = dobiveneIgrac;
-            this.dobiveneAI = dobiveneAI;
-            this.spil = spil;
+
+            Spil spilica = new Spil();
+            this.spil = spilica;
+
+            this.igrac = new List<Karta> { };
+            this.racunalo = new List<Karta> { };
+
+            for (int i = 0; i < 10; i++)
+            {
+
+                this.igrac.Add(this.spil.spil[0]);
+                this.racunalo.Add(this.spil.spil[1]);
+                Console.WriteLine(this.igrac[i].pathSlika + " " + this.racunalo[i].pathSlika);
+                this.spil.spil.RemoveAll(x => x.pathSlika == this.spil.spil[0].pathSlika);
+                this.spil.spil.RemoveAll(x => x.pathSlika == this.spil.spil[0].pathSlika);
+                Console.WriteLine(this.spil.spil[0].pathSlika + " " + this.spil.spil[1].pathSlika);
+
+            }
+            Random koprvi = new Random();
+            int kodrugi = koprvi.Next(1235455);
+            this.igracprvi = kodrugi % 2 == 0;
+            this.prazan_spil = false;
+
+
+            this.dobiveneAI = new List<Karta> { };
+            this.dobiveneIgrac = new List<Karta> { };
+            this.gornja_na_stolu = null;
+            this.donja_na_stolu = null;
             
             
 

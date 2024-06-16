@@ -18,7 +18,8 @@ namespace projekt
         }
 
         // file.txt !! C:/Users/Documents/file.txt !! /files/file.txt !! ../../slike/file.txt
-        public Stanje StanjeIgre { get; set; }
+
+        public Stanje StanjeIgre;
 
         private void azuriraj_stanje( Stanje stanje )
         {            
@@ -96,50 +97,14 @@ namespace projekt
         private void Treseta_Load(object sender, EventArgs e)
         {
 
-            Spil novi_spil = new Spil();
-            this.StanjeIgre.spil = novi_spil.spil;
-            Console.WriteLine( "Pena krena" );
-            for ( int i = 0; i < 10; i++ )
-            {
-
-                this.StanjeIgre.igrac.Add(this.StanjeIgre.spil[0]);
-                this.StanjeIgre.racunalo.Add(this.StanjeIgre.spil[1]);
-                Console.WriteLine(this.StanjeIgre.igrac[i].pathSlika + " " + this.StanjeIgre.racunalo[i].pathSlika );
-                this.StanjeIgre.spil.RemoveAll(x => x.pathSlika == this.StanjeIgre.spil[0].pathSlika);
-                this.StanjeIgre.spil.RemoveAll(x => x.pathSlika == this.StanjeIgre.spil[0].pathSlika);
-                Console.WriteLine(this.StanjeIgre.spil[0].pathSlika + " " + this.StanjeIgre.spil[1].pathSlika );
-
-            }
-            Random koprvi = new Random();
-            int kodrugi = koprvi.Next( 1235455 );
-            this.StanjeIgre.igracprvi = kodrugi%2==0;
-            this.StanjeIgre.prazan_spil = false;
-            azuriraj_stanje( this.StanjeIgre );
+            StanjeIgre = new Stanje();
+            azuriraj_stanje( StanjeIgre );
 
         }
 
         private void btnIgraj_Click(object sender, EventArgs e)
         {
 
-            Spil novi_spil = new Spil();
-            this.StanjeIgre.spil = novi_spil.spil;
-            Console.WriteLine("Pena krena");
-            for (int i = 0; i < 10; i++)
-            {
-
-                this.StanjeIgre.igrac.Add(this.StanjeIgre.spil[0]);
-                this.StanjeIgre.racunalo.Add(this.StanjeIgre.spil[1]);
-                Console.WriteLine(this.StanjeIgre.igrac[i].pathSlika + " " + this.StanjeIgre.racunalo[i].pathSlika);
-                this.StanjeIgre.spil.RemoveAll(x => x.pathSlika == this.StanjeIgre.spil[0].pathSlika);
-                this.StanjeIgre.spil.RemoveAll(x => x.pathSlika == this.StanjeIgre.spil[0].pathSlika);
-                Console.WriteLine(this.StanjeIgre.spil[0].pathSlika + " " + this.StanjeIgre.spil[1].pathSlika);
-
-            }
-            Random koprvi = new Random();
-            int kodrugi = koprvi.Next(1235455);
-            this.StanjeIgre.igracprvi = kodrugi % 2 == 0;
-            this.StanjeIgre.prazan_spil = false;
-            azuriraj_stanje(this.StanjeIgre);
 
         }
 

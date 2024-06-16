@@ -62,8 +62,8 @@ namespace projekt
                 {
                     Zog = "B";
                 }
-
-                pathSlika = Zog + "_" + Broj + ".jpg";
+                //C:\Users\Frane\Source\Repos\lucejericevic\projekt2\projekt\ResourcesTreseta
+                pathSlika = "../../ResourcesTreseta/" + Zog +"/" + Zog +"_" + Broj + ".jpg";
 
                 Karta k = new Karta(Zog, Broj, Vrijednost, pathSlika);
                 povratnispil.Add(k);
