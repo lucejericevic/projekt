@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.AxHost;
 
 namespace projekt
 {
@@ -20,37 +22,120 @@ namespace projekt
         // file.txt !! C:/Users/Documents/file.txt !! /files/file.txt !! ../../slike/file.txt
 
         public Stanje StanjeIgre;
+        public string odgovor = "";
 
-        private void azuriraj_stanje( Stanje stanje )
-        {            
+        private void na_promjenu(object sender, FileSystemEventArgs e) 
+        {
 
-            igrac1.ImageLocation = stanje.igrac[0].pathSlika;
-            igrac2.ImageLocation = stanje.igrac[1].pathSlika;
-            igrac3.ImageLocation = stanje.igrac[2].pathSlika;
-            igrac4.ImageLocation = stanje.igrac[3].pathSlika;
-            igrac5.ImageLocation = stanje.igrac[4].pathSlika;
-            igrac6.ImageLocation = stanje.igrac[5].pathSlika;
-            igrac7.ImageLocation = stanje.igrac[6].pathSlika;
-            igrac8.ImageLocation = stanje.igrac[7].pathSlika;
-            igrac9.ImageLocation = stanje.igrac[8].pathSlika;
-            igrac10.ImageLocation = stanje.igrac[9].pathSlika;
+            
+            odgovor = e.FullPath;
+            StreamReader rd = new StreamReader(odgovor);
+            string line;
+            line = rd.ReadLine();
+            int broj = int.Parse(line);
+
+            igranje_karte( broj, false );
+
+        }
+
+        private void cekanje_racunala()
+        {
+            string a = "";
+
+
+           var watcher = new FileSystemWatcher("../../ResourcesTreseta/");
+
+            watcher.NotifyFilter = NotifyFilters.Attributes
+                                 | NotifyFilters.CreationTime
+                                 | NotifyFilters.DirectoryName
+                                 | NotifyFilters.FileName
+                                 | NotifyFilters.LastAccess
+                                 | NotifyFilters.LastWrite
+                                 | NotifyFilters.Security
+                                 | NotifyFilters.Size;
+
+            watcher.Changed += na_promjenu;
+
+
+            watcher.Filter = "*.txt";
+            watcher.IncludeSubdirectories = true;
+            watcher.EnableRaisingEvents = true;
+
+
+            odgovor = "";
+
+        }
+
+        private void igranje_karte( int broj, bool igrac  )
+        {
+
+
+                
+            if (StanjeIgre.igracprvi == igrac  && !StanjeIgre.odigrano)
+            {
+                MessageBox.Show(broj.ToString());
+                if( igrac)
+                {
+
+                    StanjeIgre.donja_na_stolu = StanjeIgre.igrac[broj - 1];
+                    Karta kopija = StanjeIgre.igrac[ StanjeIgre.igrac.Count - 1];
+                    StanjeIgre.igrac.RemoveAt( StanjeIgre.igrac.Count - 1);
+                    if (broj - 1 != StanjeIgre.igrac.Count)
+                    {
+                        StanjeIgre.igrac[broj - 1] = kopija;
+
+                    }
+                    ((PictureBox)this.Controls.Find("igrac" + (StanjeIgre.igrac.Count + 1).ToString(), true)[0]).Image = null;
+
+                }
+                else
+                {
+
+                    StanjeIgre.donja_na_stolu = StanjeIgre.racunalo[broj - 1];
+                    Karta kopija = StanjeIgre.racunalo[StanjeIgre.racunalo.Count - 1];
+                    StanjeIgre.racunalo.RemoveAt( StanjeIgre.racunalo.Count - 1 );
+                    if (broj - 1 != StanjeIgre.racunalo.Count)
+                    {
+                        StanjeIgre.racunalo[broj - 1] = kopija;
+
+                    }
+                    ((PictureBox)this.Controls.Find("ai" + ( StanjeIgre.racunalo.Count + 1 ).ToString(), true)[0]).Image = null;
+
+                }
+                StanjeIgre.odigrano = true;
+                azuriraj_stanje( StanjeIgre );
+
+
+
+            }
+
+
+        }
+        //"C:\Users\Frane\source\repos\lucejericevic\projekt\projekt\ResourcesTreseta\gornjabacena.png"
+        private void azuriraj_stanje(Stanje stanje)
+        {
+            Console.WriteLine(stanje.racunalo[0].pathSlika);
+
+            int k = stanje.racunalo.Count > stanje.igrac.Count ? stanje.igrac.Count : stanje.racunalo.Count;
+
+            for (int i = 0; i < k ; i++)
+            {
+
+                ((PictureBox)this.Controls.Find("igrac" + (i + 1).ToString(), true)[0]).ImageLocation = stanje.igrac[i].pathSlika;
+                ((PictureBox)this.Controls.Find("ai" + (i + 1).ToString(), true)[0]).ImageLocation = stanje.racunalo[i].pathSlika;
+
+            }
+
+
 
             //aiBacena - ai bacena; igracBacena - igrac bacena
 
-            if (stanje.igracprvi)
-            {
-                donjaBacena.ImageLocation = stanje.donja_na_stolu.pathSlika;
-                gornjaBacena.ImageLocation = stanje.gornja_na_stolu.pathSlika;
+
+            donjaBacena.ImageLocation = stanje.donja_na_stolu.pathSlika != null ? stanje.donja_na_stolu.pathSlika : "../../ResourcesTreseta/donjabacena.png";
+            gornjaBacena.ImageLocation = stanje.gornja_na_stolu.pathSlika != null ? stanje.gornja_na_stolu.pathSlika : "../../ResourcesTreseta/gornjabacena.png";
 
 
-            }
-            else
-            {
-                donjaBacena.ImageLocation = stanje.gornja_na_stolu.pathSlika;
-                gornjaBacena.ImageLocation = stanje.donja_na_stolu.pathSlika;
-            }
-
-            if ( stanje.prazan_spil )
+            if ( stanje.spil.spil.Count() == 0 )
             {
                 pbSpil.Image = null;
             }
@@ -59,21 +144,19 @@ namespace projekt
         }
 
 
-        public bool provjeri_zog(Stanje stanje, string zog, Karta bacenakarta)
+        public bool provjeri_zog( string zog, Karta bacenakarta)
         {
 
 
             if ( bacenakarta.Zog == zog )
             {
-    
-                return true;
-
+                    return true;
 
             }
             else
             {
 
-                foreach ( var x in stanje.igrac )
+                foreach ( var x in StanjeIgre.igrac )
                 {
 
                     if ( x.Zog == zog )
@@ -94,6 +177,69 @@ namespace projekt
         }
 
 
+
+        private void btnIgraj_Click(object sender, EventArgs e)
+        {
+
+            StanjeIgre = new Stanje();
+            azuriraj_stanje(StanjeIgre);
+            cekanje_racunala();
+
+        }
+
+        private void igrac1_Click(object sender, EventArgs e)
+        {
+
+            igranje_karte( 1, true );
+             
+        }
+
+        private void igrac2_Click(object sender, EventArgs e)
+        {
+            igranje_karte(2, true);
+        }
+
+        private void igrac3_Click(object sender, EventArgs e)
+        {
+            igranje_karte(3, true);
+        }
+
+        private void igrac4_Click(object sender, EventArgs e)
+        {
+            igranje_karte(4, true);
+        }
+
+        private void igrac5_Click(object sender, EventArgs e)
+        {
+            igranje_karte(5, true);
+        }
+
+        private void igrac6_Click(object sender, EventArgs e)
+        {
+            igranje_karte(6, true);
+        }
+
+        private void igrac7_Click(object sender, EventArgs e)
+        {
+            igranje_karte(7, true);
+        }
+
+        private void igrac8_Click(object sender, EventArgs e)
+        {
+            igranje_karte(8, true);
+        }
+
+        private void igrac9_Click(object sender, EventArgs e)
+        {
+            igranje_karte(9, true);
+        }
+
+        private void igrac10_Click(object sender, EventArgs e)
+        {
+
+            igranje_karte(10, true);
+        }
+
         private void Treseta_Load(object sender, EventArgs e)
         {
 
@@ -101,236 +247,6 @@ namespace projekt
             azuriraj_stanje( StanjeIgre );
 
         }
-
-        private void btnIgraj_Click(object sender, EventArgs e)
-        {
-
-
-        }
-
-        private void igrac1_Click(object sender, EventArgs e)
-        {
-            if(this.StanjeIgre.igracprvi)
-            {
-                donjaBacena.Image = igrac1.Image;
-                igrac1.Image = null;
-            }
-            else
-            {
-                bool valjalizog = provjeri_zog(StanjeIgre, StanjeIgre.igrac[0].Zog, this.StanjeIgre.igrac[0]);
-                if (valjalizog)
-                {
-                    gornjaBacena.Image = igrac1.Image;
-                    igrac1.Image = null;
-                }
-                else
-                {
-                    MessageBox.Show("Neispravan potez, krivi zog!");
-                }
-            }
-             
-        }
-
-        private void igrac2_Click(object sender, EventArgs e)
-        {
-            if (this.StanjeIgre.igracprvi)
-            {
-                donjaBacena.Image = igrac2.Image;
-                igrac2.Image = null;
-            }
-            else
-            {
-                bool valjalizog = provjeri_zog(StanjeIgre, StanjeIgre.igrac[1].Zog, this.StanjeIgre.igrac[1]);
-                if (valjalizog)
-                {
-                    gornjaBacena.Image = igrac2.Image;
-                    igrac2.Image = null;
-                }
-                else
-                {
-                    MessageBox.Show("Neispravan potez, krivi zog!");
-                }
-            }
-        }
-
-        private void igrac3_Click(object sender, EventArgs e)
-        {
-            if (this.StanjeIgre.igracprvi)
-            {
-                donjaBacena.Image = igrac3.Image;
-                igrac3.Image = null;
-            }
-            else
-            {
-                bool valjalizog = provjeri_zog(StanjeIgre, StanjeIgre.igrac[2].Zog, this.StanjeIgre.igrac[2]);
-                if (valjalizog)
-                {
-                    gornjaBacena.Image = igrac3.Image;
-                    igrac3.Image = null;
-                }
-                else
-                {
-                    MessageBox.Show("Neispravan potez, krivi zog!");
-                }
-            }
-        }
-
-        private void igrac4_Click(object sender, EventArgs e)
-        {
-            if (this.StanjeIgre.igracprvi)
-            {
-                donjaBacena.Image = igrac4.Image;
-                igrac4.Image = null;
-            }
-            else
-            {
-                bool valjalizog = provjeri_zog(StanjeIgre, StanjeIgre.igrac[3].Zog, this.StanjeIgre.igrac[3]);
-                if (valjalizog)
-                {
-                    gornjaBacena.Image = igrac4.Image;
-                    igrac4.Image = null;
-                }
-                else 
-                {
-                    MessageBox.Show("Neispravan potez, krivi zog!");
-                }
-            }
-        }
-
-        private void igrac5_Click(object sender, EventArgs e)
-        {
-            if (this.StanjeIgre.igracprvi)
-            {
-                donjaBacena.Image = igrac5.Image;
-                igrac5.Image = null;
-            }
-            else
-            {
-                bool valjalizog = provjeri_zog(StanjeIgre, StanjeIgre.igrac[4].Zog, this.StanjeIgre.igrac[4]);
-                if (valjalizog)
-                {
-                    gornjaBacena.Image = igrac5.Image;
-                    igrac5.Image = null;
-                }
-                else 
-                { 
-                    MessageBox.Show("Neispravan potez, krivi zog!");
-                }
-            }
-        }
-
-        private void igrac6_Click(object sender, EventArgs e)
-        {
-            if (this.StanjeIgre.igracprvi)
-            {
-                donjaBacena.Image = igrac6.Image;
-                igrac6.Image = null;
-            }
-            else
-            {
-                bool valjalizog = provjeri_zog(StanjeIgre, StanjeIgre.igrac[5].Zog, this.StanjeIgre.igrac[5]);
-                if (valjalizog)
-                {
-                    gornjaBacena.Image = igrac6.Image;
-                    igrac6.Image = null;
-                }
-                else
-                {
-                    MessageBox.Show("Neispravan potez, krivi zog!");
-                }
-            }
-        }
-
-        private void igrac7_Click(object sender, EventArgs e)
-        {
-            if (this.StanjeIgre.igracprvi)
-            {
-                donjaBacena.Image = igrac7.Image;
-                igrac7.Image = null;
-            }
-            else
-            {
-                bool valjalizog = provjeri_zog(StanjeIgre, StanjeIgre.igrac[6].Zog, this.StanjeIgre.igrac[6]);
-                if (valjalizog)
-                {
-                    gornjaBacena.Image = igrac7.Image;
-                    igrac7.Image = null;
-                }
-                else
-                {
-                    MessageBox.Show("Neispravan potez, krivi zog!");
-                }
-            }
-        }
-
-        private void igrac8_Click(object sender, EventArgs e)
-        {
-            if (this.StanjeIgre.igracprvi)
-            {
-                donjaBacena.Image = igrac8.Image;
-                igrac8.Image = null;
-            }
-            else
-            {
-                bool valjalizog = provjeri_zog(StanjeIgre, StanjeIgre.igrac[7].Zog, this.StanjeIgre.igrac[7]);
-                if (valjalizog)
-                {
-                    gornjaBacena.Image = igrac8.Image;
-                    igrac8.Image = null;
-                }
-                else
-                {
-                    MessageBox.Show("Neispravan potez, krivi zog!");
-                }
-            }
-        }
-
-        private void igrac9_Click(object sender, EventArgs e)
-        {
-            if (this.StanjeIgre.igracprvi)
-            {
-                donjaBacena.Image = igrac9.Image;
-                igrac9.Image = null;
-            }
-            else
-            {
-                bool valjalizog = provjeri_zog(StanjeIgre, StanjeIgre.igrac[8].Zog, this.StanjeIgre.igrac[8]);
-                if (valjalizog)
-                {
-                    gornjaBacena.Image = igrac9.Image;
-                    igrac9.Image = null;
-                }
-                else
-                {
-                    MessageBox.Show("Neispravan potez, krivi zog!");
-                }
-            }
-        }
-
-        private void igrac10_Click(object sender, EventArgs e)
-        {
-
-            if (this.StanjeIgre.igracprvi)
-            {
-                donjaBacena.Image = igrac10.Image;
-                igrac10.Image = null;
-            }
-            else
-            {
-                bool valjalizog = provjeri_zog(StanjeIgre, StanjeIgre.igrac[0].Zog, this.StanjeIgre.igrac[0]);
-                if (valjalizog)
-                {
-                    gornjaBacena.Image = igrac10.Image;
-                    igrac10.Image = null;
-                }
-                else
-                {
-                    MessageBox.Show("Neispravan potez, krivi zog!");
-                }
-            }
-        }
-
-        
     }
 
      
